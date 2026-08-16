@@ -1,12 +1,12 @@
 {
- "name": "Interview Readiness: DSA ServiceNow",
- "short_name": "IR Prep",
+ "name": "Study Console",
+ "short_name": "Study",
  "start_url": "./index.html",
  "scope": "./",
  "display": "standalone",
  "background_color": "#0b1020",
  "theme_color": "#0b1020",
- "description": "Interview preparation from documented evidence. Answer-quality scores only; no candidate judgment.",
+ "description": "Offline single-file reference tool with an encrypted content layer.",
  "icons": [
   {
    "src": "./icon-192.png",
