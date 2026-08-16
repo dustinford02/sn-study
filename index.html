@@ -1,0 +1,1411 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#0b1020">
+<meta name="robots" content="noindex,nofollow,noarchive,nosnippet">
+<meta name="googlebot" content="noindex,nofollow">
+<meta name="description" content="Interview readiness application: DSA ServiceNow Application Developer. Prepares interview answers from documented evidence. Makes no candidate judgment.">
+<title>Interview Readiness: DSA ServiceNow</title>
+<link rel="manifest" href="./manifest.json">
+<link rel="icon" href="./icon-192.png" type="image/png">
+<link rel="apple-touch-icon" href="./icon-192.png">
+<style>
+*{box-sizing:border-box;-webkit-tap-highlight-color:transparent}
+:root{--bg:#0b1020;--card:#151b32;--card2:#1b2240;--tx:#e8ecf8;--mut:#98a2c8;--acc:#5b8cff;--ok:#38d39f;--warn:#ffb454;--bad:#ff6b6b;--pur:#b58cff;--bd:#27304f}
+html,body{margin:0;padding:0}
+body{background:var(--bg);color:var(--tx);font:16px/1.55 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;padding-bottom:92px}
+header{position:sticky;top:0;z-index:30;background:var(--bg);border-bottom:1px solid var(--bd);padding:calc(env(safe-area-inset-top) + 8px) 14px 8px}
+.hrow{display:flex;align-items:center;gap:10px;max-width:780px;margin:0 auto}
+h1{font-size:16px;margin:0;flex:1;font-weight:700}
+h1 small{display:block;font-size:11px;color:var(--mut);font-weight:500}
+main{padding:14px;max-width:780px;margin:0 auto}
+button{font:inherit;color:inherit;background:none;border:0;cursor:pointer}
+.btn{display:inline-flex;align-items:center;justify-content:center;min-height:44px;padding:10px 16px;border-radius:12px;border:1px solid var(--bd);background:var(--card2);color:var(--tx);font-weight:600;font-size:14px}
+.btn.acc{background:var(--acc);border-color:var(--acc);color:#fff}
+.btn.ghost{background:none}
+.btn:focus-visible,.chip:focus-visible,.navb:focus-visible,.iconb:focus-visible,.qh:focus-visible,input:focus-visible,select:focus-visible{outline:2px solid var(--acc);outline-offset:2px}
+.iconb{min-width:44px;min-height:44px;border:1px solid var(--bd);border-radius:12px;background:var(--card2);font-size:18px}
+.card{background:var(--card);border:1px solid var(--bd);border-radius:14px;margin:0 0 12px;overflow:hidden}
+.pad{padding:14px}
+.note{font-size:13px;color:var(--mut);margin:0 0 12px}
+.sec{margin-top:14px}
+.lbl{font-size:11px;letter-spacing:.08em;text-transform:uppercase;color:var(--mut);font-weight:700;margin-bottom:4px;display:flex;align-items:center;gap:8px}
+.txt{font-size:14.5px}
+.chip{display:inline-flex;align-items:center;gap:4px;font-size:11px;font-weight:700;border-radius:999px;padding:3px 9px;border:1px solid var(--bd);color:var(--mut);background:var(--card2)}
+.chip.sm{padding:2px 7px}
+.tier-PROD{color:#0b1020;background:var(--ok);border-color:var(--ok)}
+.tier-PDI{color:#fff;background:var(--acc);border-color:var(--acc)}
+.tier-TRANSFER{color:#0b1020;background:var(--pur);border-color:var(--pur)}
+.tier-STUDIED{color:#0b1020;background:var(--warn);border-color:var(--warn)}
+.tier-NONE{color:#fff;background:var(--bad);border-color:var(--bad)}
+.st-EXCEEDS{color:#0b1020;background:var(--ok)}.st-PARTIAL{color:#0b1020;background:var(--warn)}
+.st-NOTMET{color:#fff;background:var(--bad)}
+.prov{font-size:10px;letter-spacing:.06em;border-radius:6px;padding:2px 6px;font-weight:800}
+.prov.S{background:#1d3b2f;color:var(--ok);border:1px solid var(--ok)}
+.prov.D{background:#3b3220;color:var(--warn);border:1px solid var(--warn)}
+.prov.C{background:#1d2b4d;color:var(--acc);border:1px solid var(--acc)}
+nav{position:fixed;bottom:0;left:0;right:0;display:flex;background:var(--card);border-top:1px solid var(--bd);padding-bottom:env(safe-area-inset-bottom);z-index:30}
+.navb{flex:1;color:var(--mut);padding:10px 2px 12px;font-size:10.5px;font-weight:700;min-height:56px}
+.navb b{display:block;font-size:18px;font-weight:400;line-height:1.25}
+.navb[aria-current="page"]{color:var(--acc)}
+.qh{width:100%;text-align:left;padding:13px 14px;display:flex;gap:10px;align-items:flex-start;min-height:44px}
+.qh .qt{font-weight:600;font-size:14.5px;flex:1}
+.qh .meta{font-size:11px;color:var(--mut);margin-top:3px;display:flex;gap:6px;flex-wrap:wrap}
+.num{background:var(--card2);border:1px solid var(--bd);color:var(--mut);border-radius:8px;min-width:36px;height:26px;display:inline-flex;align-items:center;justify-content:center;font-size:11px;font-weight:800;flex:0 0 auto}
+.rate{display:flex;gap:6px;align-items:center;flex-wrap:wrap}
+.rate .chip{min-width:44px;min-height:36px;justify-content:center;font-size:13px}
+.rate .chip[aria-pressed="true"]{background:var(--acc);border-color:var(--acc);color:#fff}
+table{width:100%;border-collapse:collapse;font-size:13px}
+.twrap{overflow-x:auto}
+th,td{border:1px solid var(--bd);padding:7px 9px;text-align:left;vertical-align:top}
+th{background:var(--card2);font-size:11.5px}
+input[type=text],input[type=search],select{width:100%;min-height:44px;padding:10px 13px;border-radius:12px;border:1px solid var(--bd);background:var(--card);color:var(--tx);font-size:16px}
+.row{display:flex;gap:8px;flex-wrap:wrap;align-items:center}
+.answer{background:var(--card2);border:1px solid var(--bd);border-radius:12px;padding:12px;margin-top:8px;font-size:14.5px}
+.answer .ahead{display:flex;justify-content:space-between;align-items:center;margin-bottom:6px;gap:8px}
+.timer{font-variant-numeric:tabular-nums;font-size:34px;font-weight:800;text-align:center;padding:8px}
+.timer.low{color:var(--bad)}
+.bar{height:10px;border-radius:6px;background:var(--card2);overflow:hidden;border:1px solid var(--bd)}
+.bar i{display:block;height:100%;background:var(--acc)}
+.svgwrap{background:var(--card2);border:1px solid var(--bd);border-radius:12px;padding:8px;margin-top:8px}
+.svgwrap svg{width:100%;height:auto;display:block}
+.cap{font-size:12px;color:var(--mut);margin-top:6px}
+mark{background:var(--warn);color:#0b1020;border-radius:3px;padding:0 2px}
+.hide{display:none!important}
+.pathblock{display:flex;gap:12px;padding:12px 14px;border-bottom:1px solid var(--bd);align-items:flex-start}
+.pathblock:last-child{border-bottom:0}
+.pathblock .min{min-width:52px;text-align:center;font-weight:800;font-size:13px;color:var(--mut);padding-top:2px}
+.pathblock.done{opacity:.55}
+.pill{font-size:11px;color:var(--mut);border:1px solid var(--bd);border-radius:999px;padding:2px 8px}
+.warnbox{border:1px solid var(--warn);background:#2b2413;border-radius:12px;padding:10px 12px;font-size:13px;margin-top:10px}
+.okbox{border:1px solid var(--ok);background:#132b22;border-radius:12px;padding:10px 12px;font-size:13px;margin-top:10px}
+h2{font-size:15px;margin:18px 0 8px}
+h3{font-size:13.5px;margin:0 0 6px}
+ul{margin:6px 0 0;padding-left:20px;font-size:14px}
+li{margin:4px 0}
+.grid2{display:grid;grid-template-columns:1fr 1fr;gap:8px}
+@media(max-width:420px){.grid2{grid-template-columns:1fr}}
+.checkrow{display:flex;gap:10px;align-items:flex-start;padding:10px 0;border-bottom:1px solid var(--bd)}
+.checkrow:last-child{border:0}
+.checkrow input{width:22px;height:22px;min-height:22px;accent-color:var(--acc);margin-top:2px;flex:0 0 auto}
+.checkrow label{font-size:14px}
+</style></head><body>
+<header><div class="hrow">
+<h1 id="htitle">Interview Readiness<small id="hsub">DSA ServiceNow Application Developer</small></h1>
+<button type="button" class="iconb" id="backbtn" aria-label="Back" onclick="goBack()">&#8592;</button>
+<button type="button" class="iconb" aria-label="Search all content" onclick="go('search')">&#128269;</button>
+</div></header>
+<main id="m" aria-live="polite"></main>
+<nav aria-label="Main">
+<button type="button" class="navb" data-v="path" onclick="go('path')"><b>&#128506;</b>Path</button>
+<button type="button" class="navb" data-v="questions" onclick="go('questions')"><b>&#10067;</b>Questions</button>
+<button type="button" class="navb" data-v="evidence" onclick="go('evidence')"><b>&#9878;</b>Evidence</button>
+<button type="button" class="navb" data-v="mock" onclick="go('mock')"><b>&#127908;</b>Mock</button>
+<button type="button" class="navb" data-v="review" onclick="go('review')"><b>&#9889;</b>Review</button>
+</nav>
+<script>
+"use strict";
+/* ============================================================
+   CONTENT LAYER (edit content here; app logic reads these objects)
+   Schema:
+   META{...} CHRON[stages] TIERS{...} REQS[{id,req,jd,status,tiers,notes,resp,qref}]
+   BANKA/BANKB[{id,bank,band,q,label,testing,jd,evidence:[{t,tier}],structure,
+     a30,a60,a120,maxNote,followups,terms,avoid,practice,srcs}]
+   DEFENSE[{id,claim,evidence,context,role,tools,results,boundary,followups,defense,gap}]
+   RAPID{...} PATH[{id,title,min,desc,items,brk}]
+   Provenance: evidence/facts = SOURCED; authored spoken answers = DRAFT until confirmed.
+   ============================================================ */
+const META = {
+  app: "Interview Readiness: DSA ServiceNow Application Developer",
+  role: "ServiceNow SPM Application Developer, Data Systems Analysts, Inc. (DSA), MilTech customer, remote",
+  user: "Dustin S. Ford",
+  storageKey: "ir_prep_v1",
+  flagged: "Training-hour total is stated only as 'more than 36 hours' per the governing record; a precise total is deliberately not used.",
+  purpose: "Prepares interview answers. Scores describe answer quality only. This app makes no overall candidate judgment."
+};
+
+const CHRON = [
+  { d: "July 2025", t: "Independent, self-directed ServiceNow learning through my own profile/account", cat: "STUDIED", note: "Not production, not professional, not TDL-064, not PDI." },
+  { d: "August 2025", t: "Active production use begins on federal task order TDL-064", cat: "PROD", note: "Non-administrator capacity; project manager and advanced user with limited configuration authority." },
+  { d: "Aug 2025 to May 2026", t: "Most intensive period of TDL-064 production use", cat: "PROD", note: "Milestones, dashboards, reporting, change/release coordination, CLIN-level data." },
+  { d: "After May 2026", t: "Continued production use through monitoring and reporting", cat: "PROD", note: "Reduced intensity." },
+  { d: "July 22, 2026", t: "Documented ServiceNow University and Personal Developer Instance record begins", cat: "STUDIED+PDI", note: "21 courses, two learning paths, more than 36 hours; public scoped app; Zurich PDI." }
+];
+
+const TIERS = {
+  PROD: { label: "PROD", desc: "Performed in production on a real contract", color: "#38d39f" },
+  PDI: { label: "PDI", desc: "Performed hands-on in the Personal Developer Instance or a lab", color: "#5b8cff" },
+  TRANSFER: { label: "TRANSFER", desc: "Demonstrated in a real but different context", color: "#b58cff" },
+  STUDIED: { label: "STUDIED", desc: "Learned through self-directed study, ServiceNow University, coursework, or reading only", color: "#ffb454" },
+  NONE: { label: "NONE", desc: "No documented evidence; direct gap language required", color: "#ff6b6b" }
+};
+
+const REQS = [
+ {id:"r01",req:"Active Secret Clearance",jd:"Required: Active Secret Clearance",status:"EXCEEDS",tiers:["PROD"],notes:"Holds active Top Secret, Department of Defense.",resp:null,qref:"b2"},
+ {id:"r02",req:"Bachelor's degree, Engineering/CS or related",jd:"Required: Bachelor's degree in Engineering, Computer Science, or related field",status:"PARTIAL",tiers:["STUDIED"],notes:"BA Business Administration Management, Information Systems minor, 18 technology credits: C/C++, Systems Analysis & Design, Database Concepts & Programming, Decision Support Systems, Computer Systems, Business Information Systems.",resp:null,qref:"b3"},
+ {id:"r03",req:"DoD 8570.01 IAT or IAM Level II certification",jd:"Required: DoD 8570.01 IAT or IAM Level II certification",status:"NOT MET",tiers:["NONE"],notes:"Not documented as held. Security+ (a common IAT II path) exam planned late Aug 2026.",resp:"No. The posting lists DoD 8570.01 IAT or IAM Level II as a required qualification, and I do not hold one today. I am preparing for CompTIA Security+, a common IAT Level II path, with the exam planned for late August 2026. That is the factual position.",qref:"b4"},
+ {id:"r04",req:"Minimum 5 years ServiceNow development, configuration, administration",jd:"Required: Minimum 5 years of IT experience focused on ServiceNow development, configuration, and administration",status:"NOT MET",tiers:["PROD","STUDIED","PDI"],notes:"Production use since August 2025 in a non-administrator capacity; independent self-directed learning since July 2025; structured University and PDI work since July 22, 2026.",resp:"I do not have five years of ServiceNow development, configuration, and administration. My documented platform record is production use on TDL-064 since August 2025 in a non-administrator capacity, independent study through my own profile since July 2025, and a structured ServiceNow University and PDI record since July 22, 2026, including a public scoped application built in App Engine Studio.",qref:"b5"},
+ {id:"r05",req:"JavaScript",jd:"Required: Strong experience with JavaScript, REST APIs, SQL, and Linux",status:"NONE",tiers:["NONE"],notes:"No documented hands-on evidence in the supplied corpus.",resp:"I do not have documented hands-on JavaScript experience. My programming foundation is academic: C and C++ and SQL coursework in my Information Systems minor. My hands-on platform work has been declarative: Flow Designer practice in my PDI and configuration in App Engine Studio. From training I understand where JavaScript sits in the platform: client scripts, business rules, and script includes.",qref:"b6"},
+ {id:"r06",req:"REST APIs",jd:"Required: Strong experience with JavaScript, REST APIs, SQL, and Linux",status:"STUDIED",tiers:["STUDIED"],notes:"Integration Hub and API exposure via ServiceNow University and PDI only.",resp:null,qref:"b7"},
+ {id:"r07",req:"SQL",jd:"Required: Strong experience with JavaScript, REST APIs, SQL, and Linux",status:"STUDIED / TRANSFER",tiers:["STUDIED","TRANSFER"],notes:"Academic SQL/MySQL Workbench, relational database design, Database Concepts coursework.",resp:null,qref:"b8"},
+ {id:"r08",req:"Linux",jd:"Required: Strong experience with JavaScript, REST APIs, SQL, and Linux",status:"NONE",tiers:["NONE"],notes:"No documented evidence in the supplied corpus.",resp:"I do not have documented Linux experience. My technical foundation is academic systems coursework, and my platform work runs through the browser-based ServiceNow environment.",qref:"b9"},
+ {id:"r09",req:"SOAP web services",jd:"Required: Solid understanding of web services (SOAP) and object-oriented programming principles",status:"NONE",tiers:["NONE"],notes:"Not documented.",resp:"I do not have documented SOAP experience. Conceptually I understand it as XML-based web services with a formal WSDL contract, versus REST's lighter resource-based approach; my platform integration exposure comes from Integration Hub training.",qref:"b10"},
+ {id:"r10",req:"Object-oriented programming principles",jd:"Required: Solid understanding of web services (SOAP) and object-oriented programming principles",status:"STUDIED",tiers:["STUDIED"],notes:"C/C++ coursework.",resp:null,qref:"b11"},
+ {id:"r11",req:"ITIL v3 processes",jd:"Required: Experience working with ITIL v3 processes",status:"NONE",tiers:["NONE"],notes:"Not documented; no certification.",resp:"I have not worked in a formally ITIL-labeled process environment and hold no ITIL certification. The nearest documented capability is process-governed operations: change and release coordination in ServiceNow on TDL-064, and twenty years of procedure-driven, safety-critical operations in Navy air traffic control.",qref:"b12"},
+ {id:"r12",req:"ServiceNow platform integrations, hands-on",jd:"Required: Hands-on experience with ServiceNow platform integrations and toolsets",status:"STUDIED / PDI",tiers:["STUDIED","PDI"],notes:"Training and PDI foundation; explicitly not production integration engineering.",resp:null,qref:"b13"},
+ {id:"r13",req:"DevSecOps practices",jd:"Required: Experience supporting DevSecOps practices, including software development, release, and maintenance",status:"TRANSFER",tiers:["TRANSFER"],notes:"Release and maintenance coordination on TDL-064, DD250/MIRR, acceptance readiness; not software-pipeline DevSecOps.",resp:null,qref:"b14"},
+ {id:"r14",req:"App Engine Studio",jd:"Required: Experience with ServiceNow App Engine Studio and Creator Studio",status:"PDI",tiers:["PDI"],notes:"Demonstrable: scoped safety app with custom table, 2 roles, 7 ACLs, row/field security, impersonation testing, update set.",resp:null,qref:"b15"},
+ {id:"r15",req:"Creator Studio",jd:"Required: Experience with ServiceNow App Engine Studio and Creator Studio",status:"NONE",tiers:["NONE"],notes:"Not documented separately from App Engine Studio.",resp:"I have not used Creator Studio specifically. My documented low-code platform work is in App Engine Studio, where I built a scoped safety application in my PDI.",qref:"b16"},
+ {id:"r16",req:"ITSM / Incident / Problem Management",jd:"Required: Experience with ServiceNow modules including ITSM ... Incident/Problem Management",status:"STUDIED",tiers:["STUDIED"],notes:"Administration Fundamentals coursework.",resp:null,qref:"b17"},
+ {id:"r17",req:"ITOM",jd:"Required: Experience with ServiceNow modules including ... ITOM",status:"NONE",tiers:["NONE"],notes:"Not documented.",resp:"I do not have documented ITOM experience. From training I understand its scope: discovery, service mapping, and event management. My documented platform work sits on the delivery and reporting side.",qref:"b18"},
+ {id:"r18",req:"IT Asset Management",jd:"Required: Experience with ServiceNow modules including ... IT Asset Management",status:"NONE",tiers:["NONE"],notes:"Not documented.",resp:"I do not have documented IT Asset Management module experience. The nearest documented adjacent work is logistics and government-furnished baseline coordination on federal contracts, which is program-side, not platform-side.",qref:"b19"},
+ {id:"r19",req:"Automation Engine",jd:"Required: Experience with ServiceNow modules including ... Automation Engine",status:"STUDIED",tiers:["STUDIED","PDI"],notes:"Now Assist, AI Builder, AI Agents coursework; Flow Designer practiced hands-on in the PDI.",resp:null,qref:"b20"},
+ {id:"r20",req:"Service Catalog",jd:"Required: Experience with ServiceNow modules including ... Service Catalog",status:"STUDIED",tiers:["STUDIED"],notes:"Coursework.",resp:null,qref:"b21"},
+ {id:"r21",req:"Reporting",jd:"Required: Experience with ServiceNow modules including ... Reporting",status:"PROD",tiers:["PROD"],notes:"Demonstrated production evidence: full dashboard and reporting layer on TDL-064.",resp:null,qref:"b23"},
+ {id:"r22",req:"Configuration Management / CMDB",jd:"Required: Experience with ServiceNow modules including ... Configuration Management",status:"STUDIED",tiers:["STUDIED"],notes:"Conceptual, including CSDM as a prescribed data model, not a product.",resp:null,qref:"b24"},
+ {id:"r23",req:"Customer service and continuous improvement",jd:"Required: Strong customer service orientation with a focus on continuous improvement",status:"PROD / TRANSFER",tiers:["PROD","TRANSFER"],notes:"Extensive.",resp:null,qref:"b25"},
+ {id:"r24",req:"Communication and stakeholder engagement",jd:"Required: Excellent written and verbal communication skills with the ability to engage stakeholders at all levels",status:"PROD / TRANSFER",tiers:["PROD","TRANSFER"],notes:"Executive briefings, CDRL program controls, I/ITSEC 2025 presenter.",resp:null,qref:"b26"},
+ {id:"r25",req:"Managing multiple priorities",jd:"Required: Ability to manage multiple priorities in a dynamic environment and work independently or collaboratively",status:"PROD / TRANSFER",tiers:["PROD","TRANSFER"],notes:"Concurrent CIWT/CNATT portfolio and TDL-064 assignment.",resp:null,qref:"b27"},
+ {id:"r26",req:"Microsoft Copilot or equivalent AI solution",jd:"All hired employees are expected to have experience with Microsoft Copilot and / or an approved equivalent AI solution",status:"PROD",tiers:["PROD"],notes:"Uses daily; has built agents; AI4PI credential; AI workflow governance experience.",resp:null,qref:"b28"},
+ {id:"r27",req:"ServiceNow Certified Application Developer (desired)",jd:"Desired: ServiceNow Certified Application Developer certification",status:"NOT MET",tiers:["NONE"],notes:"No ServiceNow certification held.",resp:"I do not hold it. My documented certification path is CSA first, then CIS-SPM, supported by a training record of 21 courses and two learning paths since July 22, 2026.",qref:"b29"},
+ {id:"r28",req:"ITIL v3 certification (desired)",jd:"Desired: ITIL v3 certification",status:"NOT MET",tiers:["NONE"],notes:"Not documented as held.",resp:"I do not hold an ITIL certification, and I will not claim a study plan I have not documented.",qref:"b30"},
+ {id:"r29",req:"Azure or AWS (desired)",jd:"Desired: Experience with cloud platforms such as Microsoft Azure or AWS",status:"NONE",tiers:["NONE"],notes:"Not documented.",resp:"I do not have documented Azure or AWS experience.",qref:"b31"},
+ {id:"r30",req:"Relational databases: MySQL, Oracle, SQL Server (desired)",jd:"Desired: Experience with relational databases such as MySQL, Oracle, or SQL Server",status:"STUDIED",tiers:["STUDIED"],notes:"MySQL Workbench, relational database design coursework.",resp:null,qref:"b32"}
+];
+
+const DEFENSE = [
+ {id:"d1",claim:"\"Uses management platforms, including ServiceNow in a current non-administrator capacity, to maintain project/portfolio visibility, milestones, dashboards, reporting, and change/release coordination.\"",
+  evidence:"Resume professional summary and TDL-064 experience bullets.",tier:"PROD",
+  context:"GovCIO project management roles; ServiceNow use began August 2025 with the TDL-064 concurrent assignment.",
+  role:"Project manager and advanced user with limited configuration authority. Not a developer, not an administrator, not an independent implementer.",
+  tools:"Projects, project tasks, milestones, WBS structure, Project Workspace, dashboards, reports, interactive filters; stakeholders: executives, project managers, prime and subcontractor teams.",
+  results:"Leadership reporting layer used by executives and PMs; earlier funding and schedule risk visibility (qualitative).",
+  boundary:"Did not build production flows, integrations, or scoped applications; did not administer the instance. The PM role dates to May 2023; ServiceNow use within it began August 2025.",
+  followups:["Your PM role started May 2023. Were you in ServiceNow that whole time?","What does non-administrator mean in practice?","What could you change in the instance, concretely?"],
+  defense:"The role began May 2023; ServiceNow entered the picture in August 2025 with the TDL-064 concurrent assignment, and I keep those dates distinct. Non-administrator means I worked at the project-delivery level: records, milestones, WBS, dashboards, reports, and filters, with limited project-level configuration, and I did not hold admin roles or build the underlying flows and integrations.",
+  gap:"None; the claim as phrased already carries the non-administrator qualifier."},
+ {id:"d2",claim:"\"Led technical-delivery coordination for the $1.49M, 206-day TDL-064 SOF VRWB effort ... Maintained a 13% schedule lead and executed 9% below the projected ceiling.\"",
+  evidence:"Resume TDL-064 bullets.",tier:"PROD",
+  context:"Maverick, Alliant 2 GWAC task order; SOF Virtual Reality Workbench; concurrent assignment Aug 2025 to May 2026.",
+  role:"IT project manager leading technical-delivery coordination; CLIN-level cost, schedule, KPI, funding, and risk management.",
+  tools:"Agile-aligned WBS, milestone demonstrations, ServiceNow dashboards and reporting, DD250/MIRR planning, PO/CO routing, DD Form 254 support; stakeholders: prime, subcontractors, government representatives.",
+  results:"13% schedule lead; 9% below projected ceiling via just-in-time ODC procurement, travel-CLIN control, ROI-based fund realignment.",
+  boundary:"Delivery leadership and financial control, not software engineering. The 13% and 9% figures are program metrics from my own tracking and reporting.",
+  followups:["How is the 13% schedule lead measured?","Was the full $1.49M under your control?","Who verified the 9% figure?"],
+  defense:"The 13% is milestone position against the WBS baseline I maintained and reported; the 9% is executed cost against the projected ceiling in the same tracking. The $1.49M is the task-order value; my role was technical-delivery coordination and CLIN-level management across it, not unilateral budget authority.",
+  gap:"No third-party audit document for the percentages is in this corpus; they are my reported program metrics."},
+ {id:"d3",claim:"\"Built a scoped App Engine Studio safety application with a custom table, two roles, seven ACLs, row/field security, impersonation testing, form/list configuration, and update-set packaging in a Zurich Personal Developer Instance.\"",
+  evidence:"Resume; public repo GitHub.com/dustinford02/servicenow-safety-app; documented PDI lab record with impersonation verification dated August 7, 2026.",tier:"PDI",
+  context:"Self-directed PDI portfolio work beginning July 22, 2026. Scope x_2190973_safety, table x_2190973_safety_safety_issue.",
+  role:"Sole builder, in a personal developer instance.",
+  tools:"App Engine Studio, roles x_2190973_safety.user and .admin, groups mapped to roles, ACL records with role requirements and a dynamic data condition, impersonation testing, update set export.",
+  results:"Verified by impersonation: agent sees only records assigned to them via an 'Assigned to is (dynamic) Me' condition; manager read ACL with empty condition sees all; a field-level ACL hides Manager Notes from agents; delete restricted to the manager role.",
+  boundary:"PDI work, not a production deployment. No production users, no production data, no change management gate.",
+  followups:["Walk me through one of the seven ACLs.","How did you prove the security model works?","Why an update set?"],
+  defense:"The read ACL for agents is type record, operation read, requires x_2190973_safety.user, with the data condition Assigned to is (dynamic) Me; the manager read ACL requires the admin role with an empty condition so it matches every row. I proved it by impersonating each test user and checking exact record counts and field visibility, and I packaged the app as an importable update set so the build is portable and reviewable.",
+  gap:"None on content; the boundary is that all of it is PDI evidence."},
+ {id:"d4",claim:"Skills line: \"ServiceNow management platform/SPM; App Engine Studio; scoped applications; custom tables; ACLs; role-based security; impersonation testing; forms/lists; update sets; Flow Designer; Integration Hub; Now Assist; AI Builder/Agents; dashboards/KPIs ...\"",
+  evidence:"Resume Core Skills; training record; PDI lab records.",tier:"PDI",
+  context:"A single skills line that mixes production-use items with training and PDI items.",
+  role:"Varies by item, and that is the point to make cleanly.",
+  tools:"See item-by-item mapping in the defense.",
+  results:"n/a",
+  boundary:"This is the highest evidence-fidelity-risk line in the resume: a reader may take Flow Designer, Integration Hub, Now Assist, and AI Builder/Agents as production experience when they are coursework and PDI practice.",
+  followups:["Which of these have you used in production?","So Flow Designer in production or not?","Why list training items next to production items?"],
+  defense:"Two buckets. In production: the management-platform use itself, dashboards and KPIs, forms and lists at the user level. In training and PDI: App Engine Studio, scoped applications, custom tables, ACLs, role-based security, impersonation testing, update sets, and Flow Designer, where my hands-on work is a PDI build; Integration Hub, Now Assist, and AI Builder are coursework. The line is a capability inventory, and I am specific about which bucket each item sits in the moment anyone asks.",
+  gap:"The line itself does not carry per-item tier labels; the spoken mapping closes that."},
+ {id:"d5",claim:"\"ServiceNow management-platform training: 21 courses and two learning paths completed (more than 36 hours) ... Jul 2026 to Present.\"",
+  evidence:"Resume; governing record directs stating hours only as more than 36.",tier:"STUDIED",
+  context:"Documented record began July 22, 2026: Administration Fundamentals, Flow Designer, access controls, Integration Hub, Now Assist, AI Builder, AI Agents.",
+  role:"Learner, ServiceNow University.",
+  tools:"ServiceNow University on-demand courses and learning paths.",
+  results:"21 courses, two learning paths, more than 36 hours.",
+  boundary:"Training evidence, not professional experience and not certification.",
+  followups:["Exactly how many hours?","Which courses specifically?","Badges or certifications?"],
+  defense:"More than 36 documented hours; I deliberately state it that way rather than quoting a false-precision figure. The named areas are Administration Fundamentals, Flow Designer, access controls, Integration Hub, Now Assist, AI Builder, and AI Agents. These are course completions and badges, and I am explicit that they are not certifications.",
+  gap:"Underlying workbook hour total carries an unresolved two-minute discrepancy; hence the more-than-36 phrasing."},
+ {id:"d6",claim:"\"Uses Microsoft Copilot daily and has built agents.\"",
+  evidence:"Resume summary; AI4PI credential; AI workflow governance skills line.",tier:"PROD",
+  context:"Daily professional use in current GovCIO work.",
+  role:"Practitioner and workflow designer; AI workflow governance and human-AI handoffs listed in core skills.",
+  tools:"Microsoft Copilot; agent building.",
+  results:"Daily applied use; agents built.",
+  boundary:"Specific agent names, counts, and outcomes are not documented in this corpus; I speak to what I can describe live rather than citing undocumented metrics.",
+  followups:["What agents did you build?","For what workflows?","How do you govern AI output quality?"],
+  defense:"I use Copilot daily and have built agents in my workflow; when asked for specifics I describe them live rather than quoting figures I have not documented. On governance, my AI4PI credential and my doctoral focus are exactly this: human-AI handoffs, output verification, and adoption discipline.",
+  gap:"Agent specifics are undocumented here; keep them qualitative unless describing live."},
+ {id:"d7",claim:"\"Active Top Secret clearance, Department of Defense.\"",
+  evidence:"Resume.",tier:"PROD",
+  context:"20+ years in cleared DoD environments; Derivative Classification (DCSA) completed Sep 2025; DD Form 254 support on TDL-064.",
+  role:"Cleared professional.",
+  tools:"n/a",results:"Posting requires Active Secret; TS is held.",
+  boundary:"Grant and investigation dates are not documented in this corpus.",
+  followups:["When was it granted?","Any breaks in coverage?","Polygraph?"],
+  defense:"Active Top Secret with DoD. Specific adjudication dates are records questions I would confirm from my security file rather than approximate in an interview.",
+  gap:"Grant date not in corpus; answer as above."},
+ {id:"d8",claim:"\"Project Management Professional (PMP), PMI, Aug 2024 to Aug 2027.\"",
+  evidence:"Resume.",tier:"PROD",
+  context:"Certified during current GovCIO tenure; applied across CIWT/CNATT and TDL-064 program controls.",
+  role:"Certified project manager.",
+  tools:"IMPs, IMSs, WBS, risk plans, MSRs, CDRL-aligned controls.",
+  results:"Current through Aug 2027.",
+  boundary:"A PM credential, not a ServiceNow or security credential.",
+  followups:["How does PMP show up in your actual work?","Which PM methodology do you actually run?","When does it lapse?"],
+  defense:"It is current through August 2027, and it shows up as the CDRL-aligned control set I author and approve: integrated master plans and schedules, WBS structures, risk and communication plans, and status reporting that turns technical state into decisions.",
+  gap:"None."},
+ {id:"d9",claim:"\"Ed.D. candidate focused on HPT/AI; I/ITSEC 2025 author/presenter (Operating BEAT).\"",
+  evidence:"Resume education and publications sections.",tier:"PROD",
+  context:"Doctor of Education, Instructional and Performance Technology, UWF, 4.0 GPA, anticipated Dec 2027; NTSA-selected I/ITSEC 2025 presentation.",
+  role:"Doctoral candidate; author and invited presenter.",
+  tools:"Human Performance Technology; performance-diagnostic frameworks.",
+  results:"Selected by the National Training & Simulation Association to present Operating BEAT, an evidence-based performance-diagnostic framework for reducing acquisition and delivery friction.",
+  boundary:"Degree in progress, not completed; say anticipated December 2027.",
+  followups:["What is Operating BEAT in one minute?","How does a performance-technology doctorate help a platform role?","When do you finish?"],
+  defense:"Operating BEAT is an evidence-based diagnostic framework for finding and reducing acquisition and delivery friction, and NTSA selected it for I/ITSEC 2025. The doctorate matters here because platform work fails on adoption and workflow fit more often than on configuration, and diagnosing that is literally my field. Completion is anticipated December 2027.",
+  gap:"None."}
+];
+
+const RAPID = {
+  essentials: [
+    "Role: ServiceNow Application Developer supporting MilTech, remote, DoD context.",
+    "Required stack: JavaScript, REST, SQL, Linux, SOAP, OOP, ITIL v3, DevSecOps, App Engine Studio, Creator Studio.",
+    "Required modules: ITSM, ITOM, ITAM, Automation Engine, Service Catalog, Incident/Problem, Reporting, Configuration Management.",
+    "Clearance: posting requires Active Secret; Top Secret is held.",
+    "Copilot expectation: met, daily use, agents built.",
+    "Salary posted: $150,000."
+  ],
+  highConsequence: ["a1","a9","a13","b4","b5","b6"],
+  openers: [
+    {q:"How long with ServiceNow?",cue:"Three dates, in order: July 2025 independent study, August 2025 production on TDL-064, July 22 2026 University and PDI."},
+    {q:"Performance Analytics?",cue:"Lead with the no, then the report-vs-indicator distinction."},
+    {q:"Certifications?",cue:"None held; badges and a documented record; CSA then CIS-SPM."},
+    {q:"8570 IAT II?",cue:"Not held; Security+ planned late August 2026. Stop there."},
+    {q:"Five years of ServiceNow development?",cue:"One accurate sentence on the gap, then the documented record."},
+    {q:"JavaScript?",cue:"No hands-on record; academic C/C++ and SQL; declarative platform work; I know where JS sits in the platform."}
+  ],
+  coreExamples: [
+    "TDL-064 reporting story: manual, inconsistent status became weighted milestones in a consistent WBS plus a filterable drill-down dashboard; executives and PMs shared one page; earlier funding and schedule risk visibility.",
+    "Safety app walkthrough: scoped app, custom table, two roles, seven ACLs, row-level Me condition for agents, manager read-all, field-level Manager Notes protection, delete restricted, verified by impersonation, packaged as an update set.",
+    "PDI flow build: record trigger on a condition, Ask for Approval with a named rule, If/Else on approval state, Update Record on each branch; built in draft with activation and end-to-end test as next steps.",
+    "Scale leadership: 409K+ mishap-free flight operations leading 64 people; $12M radar-simulator modernization; 3,542 training hours delivered to 164 students."
+  ],
+  keyFacts: [
+    "July 2025: independent study begins, own profile.",
+    "August 2025: TDL-064 production use begins; intensive through May 2026.",
+    "July 22, 2026: University and PDI record begins; 21 courses, two paths, more than 36 hours.",
+    "TDL-064: $1.49M, 206 days, 13% schedule lead, 9% under projected ceiling.",
+    "Safety app: 1 custom table, 2 roles, 7 ACLs, update set, Zurich PDI, public on GitHub.",
+    "Credentials: PMP (to Aug 2027), CPI, AI4PI; zero ServiceNow certifications; Security+ planned late Aug 2026.",
+    "Clearance: active Top Secret."
+  ],
+  concepts: [
+    "Report vs PA indicator: a report is a live query showing now; a PA indicator is scheduled collection into time-series scores showing trend. I have built the first, not the second.",
+    "CSDM vs CMDB: CSDM is the prescribed data model standard; the CMDB is the populated repository. CSDM is not an integration product.",
+    "Configure, customize, custom-develop: built-in capability first; changes to baseline code only with documented justification and upgrade-cost acceptance; net-new scoped apps when configuration cannot meet the need.",
+    "Flow anatomy: trigger (record, date, application), then actions, flow logic (If/Else, For Each, Do Until, Parallel), data pills, error handler, test then activate.",
+    "ACL anatomy: type and operation, required role, optional data condition; any matching read rule grants access, which is why the agent rule carries a Me condition and the manager rule an empty one."
+  ],
+  anchors: [
+    "Three dates: July study, August production, July 22 lab.",
+    "Doorman rule: an ACL decides who may, and which rows.",
+    "Reports show now; PA shows trend.",
+    "Configure first, customize with justification, build net-new last.",
+    "Say the boundary once, cleanly, when the question calls for it."
+  ],
+  uncertainty: [
+    "I have not done that in production; what I have done is [X], and here is how it maps.",
+    "I do not want to overstate that. The accurate version is this.",
+    "That is outside my documented experience; conceptually it works like this."
+  ],
+  composure: [
+    "Answer the question that was asked, first.",
+    "One breath before the high-consequence answers.",
+    "Stop at the boundary; silence after a complete answer is fine.",
+    "If you lose the thread: state the date anchor and rebuild from it."
+  ],
+  askThem: [
+    "Which ServiceNow modules are most active for the MilTech customer today, and where is the backlog heaviest?",
+    "How does the team handle upgrade cycles, update-set discipline, and instance hygiene?",
+    "Where does the team most want new automation or App Engine Studio work in the next year?",
+    "How is success measured for this role in the first ninety days?",
+    "What distinguishes the people who do this job well for this customer?"
+  ],
+  closing: "Three things I would leave you with. I deliver secure federal programs, and I have done it for twenty years with named results. I use ServiceNow in production today as the platform where my program's milestones, dashboards, and reporting live. And I have been deliberate about converting adjacent experience into demonstrable platform capability: independent study beginning July 2025, and since July 22, 2026 a documented University record and a public scoped application built in App Engine Studio, with the security model verified by impersonation. Where my evidence has limits I have named them plainly, and that is exactly how I would work on your team."
+};
+
+const PATH = [
+ {id:"p0",title:"Chronology and Evidence Orientation",min:5,brk:false,desc:"Distinguish July 2025 independent learning, August 2025 production use, and July 2026 structured University/PDI work. Reinforce PROD vs PDI vs STUDIED vs unsupported. Nonblocking; skip forward any time.",items:["a1"]},
+ {id:"p1",title:"Diagnostic",min:25,brk:false,desc:"Rate confidence 1 to 5 across both banks and the requirement set. This produces your priority order.",items:[]},
+ {id:"p2",title:"Requirement Alignment",min:20,brk:false,desc:"The requirement-level evidence table. Rehearse direct, accurate responses for the highest-consequence requirement gaps.",items:["b4","b5","b6","b9"]},
+ {id:"p3",title:"High-Consequence Questions",min:75,brk:false,desc:"Q9 (a flat no), Q13 (no certifications), Q1 (three-stage chronology), plus NONE and NOT MET requirements. Learn, retrieve, then speak.",items:["a9","a13","a1","b4","b5","b6","b9","b10","b12","b18","b19"]},
+ {id:"p4",title:"Strength Consolidation",min:45,brk:false,desc:"Dashboards and Reporting, the App Engine Studio safety app, TDL-064 delivery. The strongest documented evidence areas in the current corpus.",items:["a8","b23","b15","a15","b28"]},
+ {id:"p5",title:"Break",min:30,brk:true,desc:"Enforced break. Step away from the screen. The next block is the longest.",items:[]},
+ {id:"p6",title:"JD Technical Surface",min:90,brk:false,desc:"Bank B: modules, technical spine, ITIL, DevSecOps. Concept plus accurate evidence positioning per item.",items:["b1","b7","b8","b11","b13","b14","b16","b17","b20","b21","b22","b24","b33","b34","b35","b36"]},
+ {id:"p7",title:"Resume Defense",min:60,brk:false,desc:"Every defense module, prioritized by evidence-fidelity risk. The skills-line module is mandatory.",items:["d4","d1","d2","d3","d5","d6","d7","d8","d9"]},
+ {id:"p8",title:"Interleaved Retrieval",min:40,brk:false,desc:"Mixed retrieval across everything covered. Spaced revisit of the high-consequence items.",items:["a1","a9","a13","b4","b5","b15","a8"]},
+ {id:"p9",title:"Break",min:20,brk:true,desc:"Enforced break.",items:[]},
+ {id:"p10",title:"Mock Interview 1",min:40,brk:false,desc:"Full simulation with follow-ups and challenges. Self-scored.",items:[]},
+ {id:"p11",title:"Targeted Remediation",min:40,brk:false,desc:"Only the items that scored weak in Mock 1.",items:[]},
+ {id:"p12",title:"Mock Interview 2",min:30,brk:false,desc:"Shorter, weighted to items missed in Mock 1.",items:[]},
+ {id:"p13",title:"Rapid Review Build",min:25,brk:false,desc:"Select what goes on your interview-day card.",items:[]},
+ {id:"p14",title:"Close",min:15,brk:false,desc:"Questions to ask the interviewer, closing statement, composure cues. Stop.",items:[]}
+];
+
+const BANKA = [
+{id:"a1",bank:"A",band:"Foundational",label:"Defend",q:"How many years of hands-on ServiceNow SPM experience do you have?",
+ testing:"Duration and category discipline. The interviewer is listening for whether you separate independent learning, production use, and lab work, or blur them into one number.",
+ jd:"Title context: the posting is titled ServiceNow SPM Application Developer. Nearest JD line: \"Minimum 5 years of IT experience focused on ServiceNow development, configuration, and administration.\"",
+ evidence:[{t:"Production use on TDL-064 since August 2025, most intensive through May 2026, continuing through monitoring and reporting, non-administrator capacity.",tier:"PROD"},{t:"Independent, self-directed learning through his own profile since July 2025.",tier:"STUDIED"},{t:"ServiceNow University and PDI record since July 22, 2026: 21 courses, two learning paths, more than 36 hours; public scoped app.",tier:"PDI"}],
+ structure:"Three stages in date order, then the category distinction, then stop.",
+ a30:"I started learning ServiceNow independently through my own profile in July 2025. My production use began in August 2025 on TDL-064, a federal task order, was most intensive through May 2026, and continues through monitoring and reporting. Since July 22, 2026 I have added a structured ServiceNow University and PDI program on top of that.",
+ a60:"I keep three dates straight because they are different kinds of evidence. I began independently learning ServiceNow through my own profile in July 2025. My active production use began in August 2025 on TDL-064 and was most intensive through May 2026, followed by continued monitoring and reporting. Then on July 22, 2026 I began a structured ServiceNow University and Personal Developer Instance effort: 21 courses, two learning paths, more than 36 hours, and a public scoped application. I use the platform in production in a non-administrator capacity, and I distinguish that from development, administration, and implementation consulting.",
+ a120:"There are three stages, and they are different kinds of evidence, so I will give you all three. First, independent learning: I created my own ServiceNow profile in July 2025 and started studying the platform on my own. Second, production: in August 2025 I picked up a concurrent assignment on TDL-064, a $1.49M federal task order, and ServiceNow became the platform where my program lived: milestones, WBS, dashboards, reporting, and change and release coordination. That was most intensive through May 2026 and continues today through monitoring and reporting. I worked as a project manager and advanced user with limited configuration authority, not as an administrator or developer. Third, structured learning: on July 22, 2026 I began a documented ServiceNow University and PDI program, 21 courses and two learning paths, more than 36 hours, and I built a public scoped application in App Engine Studio with a security model I verified by impersonation. I keep those categories separate on purpose, because production use, lab work, and coursework are not interchangeable claims.",
+ maxNote:null,
+ followups:["So what is the total, in years?","What does non-administrator mean day to day?","What did the July 2025 independent learning actually consist of?"],
+ terms:["Non-administrator capacity","Personal Developer Instance","Concurrent assignment"],
+ avoid:["Any single collapsed duration figure spanning the three distinct activity periods","Folding the July 2025 study start into production tenure","Calling PDI work production"],
+ practice:"Say the three dates out loud, in order, in under 30 seconds, without a filler word.",
+ srcs:["Chronology 2.2","Resume TDL-064 entry","Prepared Q1"]},
+
+{id:"a2",bank:"A",band:"Foundational",label:"Defend",q:"Which SPM modules have you implemented or configured?",
+ testing:"Whether you inflate user-level breadth into implementation depth. 'Implemented' and 'configured' are different verbs and the interviewer chose both.",
+ jd:"Title context; nearest JD line: \"Configure, enhance, and maintain ServiceNow platform implementations ... following best practices.\"",
+ evidence:[{t:"PPM at the project-delivery level: projects, project tasks, milestones, WBS, Project Workspace, dashboards, reports, limited project-level configuration.",tier:"PROD"},{t:"Public scoped application in App Engine Studio.",tier:"PDI"}],
+ structure:"Scope first, boundary second.",
+ a30:"My hands-on scope is Project Portfolio Management at the project-delivery level: projects, project tasks, milestones, WBS structure, Project Workspace, dashboards, reports, and limited project-level configuration. I have not carried a module from design through production; my public scoped app is separate PDI work.",
+ a60:"At the project-delivery level, Project Portfolio Management: projects and project tasks, milestones, WBS structure, Project Workspace, dashboards, reports, and limited project-level configuration that supported delivery visibility. I want to be precise about the verbs: I have configured within projects; I have not implemented an SPM module, meaning I have not carried one from design through production, and I did not build the underlying production flows, integrations, or scoped applications. Where I have built from scratch is my PDI: a scoped App Engine Studio application with its own table, roles, and access controls, which is lab evidence, not production.",
+ a120:"My production scope is Project Portfolio Management at the project-delivery level. Concretely: I structured work as WBS-decomposed projects with weighted milestones and planned dates, worked in Project Workspace, and built the reporting layer on top: dashboards with interactive filters for task order, business unit, and contract period, KPI views, and drill-down into project records. Limited project-level configuration supported that visibility. What I have not done is implement a module: nobody handed me Demand or Resource Management to stand up in production, and the production flows and integrations under my program were not mine. I think that distinction matters because implementation is a different discipline with different failure modes. Separately, in my PDI I have done true build work: a scoped application in App Engine Studio with a custom table, two roles, seven ACLs including row and field security, verified by impersonation testing and packaged as an update set. That is where my configuration depth currently lives, and I label it as lab work.",
+ maxNote:null,
+ followups:["Which SPM modules have you never touched?","What is limited project-level configuration, concretely?","If we asked you to stand up Demand Management, what would you do first?"],
+ terms:["Project Workspace","WBS","Scoped application","Update set"],
+ avoid:["Claiming module implementation","Letting 'configured' drift from project level to platform level"],
+ practice:"List your five concrete production artifacts in one breath: projects, milestones, WBS, dashboards, filters.",
+ srcs:["Prepared Q2","Resume skills line","PDI lab records"]},
+
+{id:"a3",bank:"A",band:"Operational",label:"Explain",q:"Have you designed an end-to-end demand intake and approval workflow?",
+ testing:"Whether you claim a production demand pipeline you never owned, and whether your Flow Designer knowledge is real.",
+ jd:"Nearest JD lines: \"Develop automation and integration solutions across the ServiceNow platform\" and the Automation Engine module requirement.",
+ evidence:[{t:"Federal work arrived through contractually defined task orders, adjacent to demand without owning the module.",tier:"PROD"},{t:"Flow Designer mechanics practiced in the PDI: triggers, conditions, approvals, record and task operations, subflows.",tier:"PDI"},{t:"Documented PDI build: an approval flow with a record trigger, Ask for Approval, If/Else on approval state, and Update Record actions, saved in draft.",tier:"PDI"}],
+ structure:"Direct no for production, then the documented PDI build, then the boundary.",
+ a30:"Not in production. In my federal context, work entered through contractually defined task orders rather than a discretionary demand pipeline. In my PDI I have built the mechanics end to end: a record trigger with a condition, an approval action, If/Else logic on the approval state, and record updates on each branch.",
+ a60:"Not in production, and I will say why: on federal task orders, intake was contractual, so I worked adjacent to demand without owning the module. Where I have built the mechanics is my PDI. I built an approval flow in Flow Designer: a record trigger with a condition on the short description, an Ask for Approval action with an explicit approval rule and a named approver, If/Else flow logic reading the approval state, and Update Record actions on both the approved and rejected branches, with work notes on each. It is saved in draft; activation and end-to-end testing are my documented next steps. I have not deployed a production record producer, scoring model, approval flow, or demand-to-project conversion.",
+ a120:"Not in production. My federal delivery context did not have a discretionary demand pipeline; work entered through contractually defined task orders, so I sat adjacent to demand without owning the module. What I can speak to hands-on is the build mechanics, from my PDI. I built an approval flow in Flow Designer: trigger type record-created on a table with a condition on the short description; an Ask for Approval action with the record data pill dragged from the data panel, an approval rule of anyone approves, and a named test approver; then If/Else flow logic where the If condition reads the approval state from the approval action's output; on the approved branch an Update Record action sets state and work notes, and the Else branch closes the record with a rejection note. I also learned the small real-world lessons: the Else option only becomes selectable after the If branch exists, data pills enforce type compatibility, and a flow does nothing until you activate it, which for mine is the documented next step along with an end-to-end test. Conceptually, a production demand design would add a record producer for intake, an assessment and scoring stage, and demand-to-project conversion, and I know those from training, not production.",
+ maxNote:null,
+ followups:["What trigger types does Flow Designer support?","How would you keep an approval from hanging forever?","What is the difference between running a flow as the initiating user versus system user?"],
+ terms:["Record trigger","Data pill","Approval rule","Subflow","Run As"],
+ avoid:["Claiming a deployed record producer or scoring model","Presenting the PDI flow as activated and tested when it is documented as draft"],
+ practice:"Sketch the flow from memory: trigger, approval, If/Else, two updates. Say it in 20 seconds.",
+ srcs:["Prepared Q3","PDI Flow Designer lab record"]},
+
+{id:"a4",bank:"A",band:"Operational",label:"Defend",q:"How have you supported portfolio prioritization or scoring in ServiceNow?",
+ testing:"Whether project-level signals get inflated into portfolio scoring machinery.",
+ jd:"Title context; nearest JD line: Reporting module requirement.",
+ evidence:[{t:"Milestone weighting, percent-complete posture, due-date visibility, cost, schedule, funding, and risk tradeoffs feeding leadership sequencing.",tier:"PROD"}],
+ structure:"What the signals were, who used them, then the boundary.",
+ a30:"At the project level: milestone weighting, percent-complete posture, due-date visibility, and cost, schedule, funding, and risk tradeoffs. Leadership used those signals to sequence effort and focus mitigation. I have not configured native demand assessments or a weighted scoring model; I know those constructs from training.",
+ a60:"My contribution was at the project level. I maintained weighted milestones, percent-complete posture, and due-date visibility, and I put cost, schedule, funding, and risk tradeoffs in front of leadership in a form they could act on, which is how sequencing decisions actually got made. What I have not done is configure the native machinery: demand assessments, a weighted scoring model, or top-down and bottom-up portfolio planning. I know what those are from training, and I am clear that knowing the constructs is not the same as having configured them in production.",
+ a120:null,
+ maxNote:"An honest answer here runs about 60 seconds. The 120-second version would either repeat the 60 or drift into training material; if they want depth, let the follow-ups pull it.",
+ followups:["What made a milestone's weight?","Who consumed the tradeoff picture and how often?","What is a demand assessment in ServiceNow?"],
+ terms:["Weighted milestones","Percent complete","Demand assessment"],
+ avoid:["Claiming a custom scoring algorithm","Calling project reporting portfolio planning"],
+ practice:"Name the four signal families out loud: milestones, percent complete, dates, tradeoffs.",
+ srcs:["Prepared Q4"]},
+
+{id:"a5",bank:"A",band:"Operational",label:"Defend",q:"Have you configured project, program, portfolio, or investment records?",
+ testing:"Object-hierarchy honesty: working within records versus creating the hierarchy.",
+ jd:"Title context; nearest JD line: \"Configure, enhance, and maintain ServiceNow platform implementations.\"",
+ evidence:[{t:"Project level only: WBS structure, milestones, planned dates, reporting relationships, limited configuration for delivery visibility.",tier:"PROD"}],
+ structure:"Scope, then the distinction that working in records is not creating the hierarchy.",
+ a30:"At the project level only: WBS structure, milestones, planned dates, reporting relationships, and limited configuration supporting delivery visibility. I have not independently implemented program, portfolio, or investment records in production.",
+ a60:"Project records, yes: I structured WBS, milestones, planned dates, and reporting relationships, with limited configuration to support delivery visibility. Program, portfolio, and investment records, no: I have worked within hierarchies others established, and I hold the distinction that working inside records is not the same as creating the hierarchy or configuring the module. If the conversation needs the concepts, I can walk the object model: projects roll to programs, programs to portfolios, with investments as the funding-oriented object, and that is training knowledge, not production configuration.",
+ a120:null,
+ maxNote:"A 60-second answer covers this honestly; extending it would pad with object-model theory better left to follow-ups.",
+ followups:["What is an investment record for?","Who set up the hierarchy you worked in?","What reporting relationships did you configure?"],
+ terms:["Object hierarchy","Investment record"],
+ avoid:["Implying you created program or portfolio structures"],
+ practice:"One sentence: 'Within project records, deeply; the hierarchy above them, no.'",
+ srcs:["Prepared Q5"]},
+
+{id:"a6",bank:"A",band:"Operational",label:"Defend",q:"Describe your experience with resource plans, capacity planning, or resource allocation.",
+ testing:"Three chained concepts; answering only one leaves the others exposed. Also whether staffing work gets mislabeled as module administration.",
+ jd:"Title context; nearest JD line: \"Ability to manage multiple priorities in a dynamic environment.\"",
+ evidence:[{t:"Staffing, workload, subcontractor, capacity, and allocation information used for schedule and resource decisions across task-order delivery; resource views and reported allocation posture.",tier:"PROD"},{t:"Twenty years of workload and qualification management in ATC operations.",tier:"TRANSFER"}],
+ structure:"The real resource work, then the module boundary.",
+ a30:"I use staffing, workload, subcontractor, capacity, and allocation information to drive schedule and resource decisions across task-order delivery, and I have worked with resource views and reported allocation posture. I have not owned ServiceNow Resource Management configuration or administered the resource-plan lifecycle.",
+ a60:"The resource work is real and the module ownership is not, and I keep those apart. On the real side: across task orders I used staffing, workload, subcontractor, capacity, and allocation information to make schedule and resource decisions, and I worked with resource views and reported allocation posture to leadership. Before that, I ran workload and qualification management for a 64-person watch team, so balancing capacity against demand is old muscle. On the module side: I have not owned Resource Management configuration or administered the resource-plan lifecycle, so requested-to-confirmed-to-allocated state handling is training knowledge for me, not production practice.",
+ a120:null,
+ maxNote:"Sixty seconds covers both halves honestly; deeper module mechanics belong to follow-ups.",
+ followups:["What is the resource plan lifecycle?","How did you handle a capacity shortfall on TDL-064?","Soft versus hard allocation?"],
+ terms:["Resource plan","Capacity","Allocation posture"],
+ avoid:["Claiming resource-plan lifecycle administration","Answering allocation only and skipping capacity"],
+ practice:"Name the three chained concepts, then your boundary, in 15 seconds.",
+ srcs:["Prepared Q6","Resume ATC entries"]},
+
+{id:"a7",bank:"A",band:"Operational",label:"Defend",q:"Have you worked with investment funding, cost plans, or financial planning in SPM?",
+ testing:"Whether financial-control competence gets misrepresented as SPM financial-module configuration.",
+ jd:"Title context; nearest JD line: Reporting module requirement.",
+ evidence:[{t:"CLIN burn and runout, forecasting, funding risk, consolidating prime and subcontractor inputs into decision-ready views.",tier:"PROD"}],
+ structure:"Real financial control, then where the system of record actually was, then the boundary.",
+ a30:"I have project financial-control experience: CLIN burn and runout, forecasting, funding risk, and consolidating prime and subcontractor inputs into decision-ready views. In that work the native SPM financial objects were not the system of record, and I have not configured cost plans, expense lines, or investment funding records.",
+ a60:"Two clean halves. The financial control is real: CLIN-level burn and runout, completion forecasting, funding-cliff mitigation, and consolidating prime and subcontractor inputs into views leadership could decide from; on TDL-064 that discipline showed up as executing 9% below the projected ceiling. The module claim I will not make: native SPM financial objects were not our system of record, and I have not configured cost plans, expense lines, or investment funding records, and I do not claim EVMS or FinOps implementation. Financial-control competence and financial-module configuration are different claims, and I only hold the first.",
+ a120:null,
+ maxNote:"Sixty seconds is the honest ceiling; module configuration detail would be training material, not experience.",
+ followups:["Where did the financial data actually live?","What is a cost plan versus a budget?","How did you forecast runout?"],
+ terms:["CLIN","Burn and runout","Cost plan","System of record"],
+ avoid:["Implying SPM was the financial system of record","EVMS or FinOps implementation claims"],
+ practice:"Say the split sentence: 'Financial control, yes; financial-module configuration, no.'",
+ srcs:["Prepared Q7","Resume TDL-064 entry"]},
+
+{id:"a8",bank:"A",band:"Operational",label:"Explain",q:"What SPM dashboards or executive reports have you built?",
+ testing:"Your strongest area. The interviewer is checking whether you can reconstruct the build end to end: source data, widget, audience, decision.",
+ jd:"Direct JD hit: Reporting is a required module; \"translate ... technical status ... into executive-ready reporting.\"",
+ evidence:[{t:"Leadership reporting layer: interactive filters for task order, business unit, contract period; KPIs for open, closed, overdue, near-due milestones; progress views; drill-down into project records; one page serving executives and PMs.",tier:"PROD"}],
+ structure:"What you built, who used it, what decision it fed, then the one boundary.",
+ a30:"This is my strongest ServiceNow area. I built and maintained a leadership reporting layer: interactive filters for task order, business unit, and contract period; KPIs for open, closed, overdue, and near-due milestones; progress views; and drill-down into project records. Executives and project managers used the same page, with filters changing the view.",
+ a60:"This is my strongest area, so let me be concrete. I built and maintained the leadership reporting layer for my program: interactive filters for task order, business unit, and contract period; current-state KPIs for open, closed, overdue, and near-due milestones; progress views; and drill-down from any number on the page into the underlying project records. The design decision I am most deliberate about is that executives and project managers used the same page, with filters changing the view, so there was never a second, stale version of the truth. The boundary: I did not build the production integrations or flow logic feeding those records, and I only claim dashboard elements I can reconstruct end to end: source data, filter or widget, audience, and the decision it supported.",
+ a120:"This is my strongest ServiceNow area. The problem it solved: leadership could not compare task completion across contract periods, because status was assembled manually with variable inputs. What I built: first the data discipline, deliverables standardized as weighted milestones inside a consistent WBS with planned dates, because a dashboard is only as good as the records under it; then the reporting layer itself, interactive filters for task order, business unit, and contract period, current-state KPIs for open, closed, overdue, and near-due milestones, progress views, and drill-down from any KPI into the underlying project records. One page served everyone: an executive filtered to a contract period and saw posture; a project manager filtered to their task order and saw their overdue items; same data, same page, no parallel spreadsheet version of the truth. What it changed: reporting became consistent, and funding and schedule risk surfaced earlier, which is qualitative and I will not dress it up with an invented metric. The boundary: the integrations and flow logic feeding those records were not mine, and I hold a personal rule that I only claim a dashboard element if I can reconstruct its whole chain: source data, filter or widget, audience, and the decision it supported.",
+ maxNote:null,
+ followups:["Pick one KPI and walk its chain from source field to decision.","How did you keep the underlying data honest?","Why filters on one page instead of separate dashboards per audience?"],
+ terms:["Interactive filter","KPI widget","Drill-down"],
+ avoid:["Claiming the integrations or flow logic behind the data","Inventing a time-saved metric"],
+ practice:"Pick the overdue-milestones KPI and say its full chain in 30 seconds.",
+ srcs:["Prepared Q8","Prepared Q15"]},
+
+{id:"a9",bank:"A",band:"Operational",label:"Defend",q:"Have you used Performance Analytics for portfolio or delivery metrics?",
+ testing:"A trap for dashboard builders: whether KPIs get misrepresented as PA. The strong move is a flat no plus the correct distinction.",
+ jd:"Title context; nearest JD line: Reporting module requirement.",
+ evidence:[{t:"Report-based widgets on live data with interactive filters, KPIs, and drill-down.",tier:"PROD"},{t:"PA mechanics known from training: indicators, indicator sources, breakdowns, collection jobs, scored snapshots.",tier:"STUDIED"}],
+ structure:"The no, first word. Then the distinction. Then stop.",
+ a30:"No. My hands-on work is report-based widgets on live data: interactive filters, KPIs, drill-down. Performance Analytics is a different mechanism: indicators, indicator sources, breakdowns, collection jobs, and scored snapshots over time, and I have not defined or administered those objects.",
+ a60:"No, and I think the distinction matters enough to state it precisely. Everything I have built is report-based: live queries against current data, presented as KPIs with interactive filters and drill-down. That shows you now. Performance Analytics shows you trend: indicators defined over indicator sources, breakdowns for slicing, collection jobs taking scheduled snapshots, and scores accumulating over time. I have not defined or administered any of those objects. A dashboard full of KPIs is not evidence of Performance Analytics implementation, and I would rather tell you that plainly than let you find it out later.",
+ a120:null,
+ maxNote:"This answer should stay short. Sixty seconds, delivered cleanly, is stronger than two minutes of theory about a capability you have not used.",
+ followups:["Why would we use PA instead of a report?","What is a breakdown?","Could a report show a trend?"],
+ terms:["Indicator","Indicator source","Breakdown","Collection job","Scored snapshot"],
+ avoid:["Softening the no","Implying your KPI dashboards were PA"],
+ practice:"Deliver the no plus distinction in one breath: reports show now, PA shows trend, I built the first.",
+ srcs:["Prepared Q9"]},
+
+{id:"a10",bank:"A",band:"Operational",label:"Explain",q:"How have you integrated SPM with ITSM, Agile Development, CMDB, or CSDM?",
+ testing:"Integration honesty plus the CSDM-vs-CMDB vocabulary check, the most revealing error available to a bluffer.",
+ jd:"Direct JD relevance: \"Hands-on experience with ServiceNow platform integrations and toolsets\"; Configuration Management module.",
+ evidence:[{t:"Conceptual understanding of the seams: project tasks and change records, deliverables and configuration items, Agile work linked to project outcomes.",tier:"STUDIED"},{t:"Integration Hub, spokes, actions, and APIs introduced through training and PDI.",tier:"STUDIED"}],
+ structure:"Direct no for production, correct concepts including the CSDM point, then the boundary.",
+ a30:"Not in production. I understand the seams conceptually: project tasks to change records, deliverables to configuration items, Agile work linked to project outcomes. And I know CSDM is a prescribed CMDB data model, not an integration product. My Integration Hub and API knowledge is training and PDI foundation.",
+ a60:"Not in production, so let me tell you exactly what I do have. Conceptually I understand the seams: project tasks connecting to change records for delivery into controlled environments, deliverables tied to configuration items, and Agile stories rolling up to project outcomes. On vocabulary, CSDM is the Common Service Data Model, a prescribed standard for how you populate and relate CMDB data; it is not an application you install or an integration you build, and confusing the two is a real tell. My Integration Hub knowledge, spokes, actions, and APIs, comes from training and PDI work, and I am explicit that training foundation is not production integration engineering.",
+ a120:null,
+ maxNote:"Sixty seconds is the honest ceiling for a production-integration question answered no; concept depth belongs in follow-ups.",
+ followups:["What is a spoke?","CSDM versus CMDB in one sentence each?","What would linking a project deliverable to a CI buy us?"],
+ terms:["CSDM","CMDB","Integration Hub","Spoke","Configuration item"],
+ avoid:["Calling CSDM an application or integration","Calling a two-table report an integration"],
+ practice:"Say the CSDM sentence until it is automatic: CSDM is the model; the CMDB is the data.",
+ srcs:["Prepared Q10"]},
+
+{id:"a11",bank:"A",band:"Strategic",label:"Defend",q:"Have you supported roadmap planning, scenario planning, or what-if analysis?",
+ testing:"Whether project schedules get dressed up as native strategic-planning capabilities.",
+ jd:"Title context; nearest JD line: \"Support ongoing system improvements aligned with mission and customer requirements.\"",
+ evidence:[{t:"Timeline and forecasting views from milestone reporting, planned dates, WBS dependencies, funding posture, resource constraints, mitigation courses of action.",tier:"PROD"}],
+ structure:"Project-level truth, then the native-feature boundary.",
+ a30:"At the project level, yes: timeline and forecasting views built from milestone reporting, planned dates, WBS dependencies, funding posture, resource constraints, and mitigation courses of action. I have not configured native ServiceNow roadmap or scenario-planning features; a project schedule is not a Strategic Planning Workspace.",
+ a60:"At the project level. I delivered timeline and forecasting views built from milestone reporting, planned dates, WBS dependencies, funding posture, and resource constraints, and I briefed mitigation courses of action against them, which is genuine forward planning. What I will not call it is native roadmap or scenario planning: I have not configured ServiceNow's roadmap features or a portfolio scenario model, and a well-run project schedule is not a Strategic Planning Workspace. I know the native constructs from training: scenarios as non-destructive alternatives you compare before committing, what-if analysis as constraint-driven simulation, and I keep that as knowledge, not experience.",
+ a120:null,
+ maxNote:"Sixty seconds covers it honestly.",
+ followups:["What is a scenario in the native sense?","What data would what-if analysis need to be computable?","What was a mitigation COA you actually briefed?"],
+ terms:["Scenario","What-if analysis","Roadmap","Mitigation COA"],
+ avoid:["Calling a Gantt view a roadmap capability","Claiming scenario configuration"],
+ practice:"One sentence: 'Project-level forecasting, yes; native scenario tooling, training only.'",
+ srcs:["Prepared Q11"]},
+
+{id:"a12",bank:"A",band:"Strategic",label:"Explain",q:"How do you determine when to configure versus customize ServiceNow?",
+ testing:"The senior-judgment question: a repeatable decision test, not a slogan.",
+ jd:"Direct JD relevance: \"following best practices\"; \"Design and implement solutions.\"",
+ evidence:[{t:"Design judgment: configure first, preserve out-of-the-box behavior, customize only with documented justification and accepted upgrade cost.",tier:"STUDIED"},{t:"PDI practice applying it: declarative ACLs, roles, forms, lists, update sets; no baseline code modified.",tier:"PDI"}],
+ structure:"The test, the sequence, then where you have applied it.",
+ a30:"Configure first and preserve out-of-the-box behavior. I customize only when a documented requirement cannot be met another way and the organization knowingly accepts the maintenance and upgrade cost. My primary test is upgradeability, and where customization is unavoidable I scope it narrowly, document it, and test it.",
+ a60:"My primary test is upgradeability. The sequence: does out-of-the-box meet the need; if not, can configuration meet it, meaning forms, fields, roles, ACLs, declarative tools; only if a documented requirement still cannot be met do I customize, and then the organization has to knowingly accept the maintenance and upgrade cost, with the change scoped narrowly, documented, and tested. In my own build work I have lived that: the safety app's whole security model is declarative, roles and ACL records with conditions, no baseline code touched, packaged in an update set so it is reviewable. That is design judgment supported by PDI practice, and I say plainly that it is not production custom-code ownership.",
+ a120:null,
+ maxNote:"Sixty seconds delivers the framework; more would be padding without a production war story to carry it.",
+ followups:["Give an example where customization is justified.","What is the upgrade risk of a modified baseline business rule?","Where does a scoped app sit in that framework?"],
+ terms:["Out-of-the-box","Declarative configuration","Upgradeability","Scoped application"],
+ avoid:["Dogmatic never-customize","Claiming production custom-code ownership"],
+ practice:"Recite the sequence: OOTB, configure, justify, scope, document, test.",
+ srcs:["Prepared Q12","PDI ACL lab record"]},
+
+{id:"a13",bank:"A",band:"Strategic",label:"Defend",q:"What ServiceNow certifications do you currently hold?",
+ testing:"Category discipline under pressure: courses and badges are not certifications, and the interviewer knows it.",
+ jd:"Nearest JD line: Desired \"ServiceNow Certified Application Developer certification.\"",
+ evidence:[{t:"Zero ServiceNow certifications. Badges and University course completions only.",tier:"NONE"},{t:"Documented record since July 22, 2026: 21 courses, two learning paths, more than 36 hours; CSA in progress, CIS-SPM next.",tier:"STUDIED"}],
+ structure:"The none, first word. Then the documented record. Then the path. Stop.",
+ a30:"None. I hold no ServiceNow certifications; I have badges and completed training in ServiceNow University. My documented record since July 22, 2026 is 21 courses, two learning paths, and more than 36 hours, and I am working toward CSA with CIS-SPM planned after it.",
+ a60:"None, and I will not blur that line: course completions, learning paths, and badges are training evidence, not certifications. What I do have is a documented record: since July 22, 2026, 21 on-demand courses and two learning paths, more than 36 hours, across administration fundamentals, Flow Designer, access control, Integration Hub, and the platform AI material. The path from here is CSA first, then CIS-SPM. And to keep categories clean: my AI4PI credential is a performance-improvement certification, not a ServiceNow one, and my PMP is project management. Nothing I hold is a ServiceNow certification, and I would rather you hear that from me in the first sentence.",
+ a120:null,
+ maxNote:"Short and clean wins this question; sixty seconds is the ceiling.",
+ followups:["When do you sit CSA?","Why CSA before CIS-SPM?","Are the badges verifiable?"],
+ terms:["CSA","CIS-SPM","Badge versus certification"],
+ avoid:["'Certified in progress' phrasing","Counting AI4PI or PMP as ServiceNow credentials","Any precise hour total"],
+ practice:"First word 'None,' then the record, no apology in the voice.",
+ srcs:["Prepared Q13"]},
+
+{id:"a14",bank:"A",band:"Strategic",label:"Defend",q:"Have you supported Agile, SAFe, waterfall, or hybrid delivery models within SPM?",
+ testing:"Methodology-to-platform honesty: practice versus module configuration.",
+ jd:"Nearest JD line: \"Experience supporting DevSecOps practices, including software development, release, and maintenance.\"",
+ evidence:[{t:"Predominantly waterfall, milestone-driven delivery: WBS-decomposed deliverables, weighted milestones, planned end dates, contract-period controls; hybrid in practice via recurring technical demonstrations inside a milestone-governed structure.",tier:"PROD"}],
+ structure:"The real delivery model, the honest hybrid nuance, then the module boundary.",
+ a30:"My delivery experience is predominantly waterfall and milestone-driven: WBS-decomposed deliverables, weighted milestones, planned end dates, contract-period controls. In practice it was hybrid, because recurring technical demonstrations and evolving work ran inside that milestone-governed structure. I have not configured Agile Development 2.0, a Hybrid project type, or SAFe in ServiceNow.",
+ a60:"Predominantly waterfall and milestone-driven, because federal contract structures demand it: WBS-decomposed deliverables, weighted milestones, planned end dates, and contract-period controls. In practice it was hybrid; TDL-064 ran recurring technical demonstrations and evolving delivery work inside that milestone-governed frame, which is the real-world default more than a pure methodology. The platform boundary: I have not configured Agile Development 2.0, a Hybrid project type, or a SAFe implementation in ServiceNow. Practicing hybrid delivery and configuring the modules that support it are different claims, and I only make the first.",
+ a120:null,
+ maxNote:"Sixty seconds is the honest ceiling.",
+ followups:["What did hybrid look like concretely on TDL-064?","What is Agile Development 2.0?","How would story-level work roll up to your milestones?"],
+ terms:["Hybrid project type","Agile Development 2.0","Milestone-governed structure"],
+ avoid:["Implying SAFe or Agile module configuration","Generic agile theory with no artifacts"],
+ practice:"Say the two-claim split: practiced hybrid, did not configure the modules.",
+ srcs:["Prepared Q14"]},
+
+{id:"a15",bank:"A",band:"Strategic",label:"Defend",q:"Can you describe a recent SPM implementation challenge and how you resolved it?",
+ testing:"The consistency check on everything before it: a real story, sized to your actual claims, with an honest outcome.",
+ jd:"Nearest JD lines: Reporting; \"Support ongoing system improvements aligned with mission and customer requirements.\"",
+ evidence:[{t:"Leadership lacked consistent cross-period task completion comparison; manual status with variable inputs. Standardized weighted milestones in a consistent WBS, defined recurring report inputs, built a filterable drill-down dashboard.",tier:"PROD"}],
+ structure:"Situation, constraint, action, result, boundary. No invented metric.",
+ a30:"Leadership could not compare task completion across contract periods; status was manual with variable inputs. I standardized deliverables as weighted milestones in a consistent WBS, defined recurring report inputs, and built a filterable dashboard with drill-down. Reporting became consistent and funding and schedule risk surfaced earlier.",
+ a60:"The challenge: leadership had no consistent way to compare task completion across contract periods. Status was assembled manually with variable inputs, and the data would not compile into a decision-ready view. What I did: standardized deliverables as weighted milestones inside a consistent WBS, defined the recurring report inputs so the same fields fed the same views every period, and built a filterable dashboard with drill-down on top. The result: reporting consistency, and earlier visibility of funding and schedule risk. I will flag the result is qualitative; I have no verified hours-saved metric, and I solved this with standard reporting and configuration, not custom code or an end-to-end implementation.",
+ a120:"Situation: on my program, leadership lacked a consistent way to compare task completion across contract periods. Status was assembled manually, inputs varied by contributor, and key data never compiled into one decision-ready view, so every review started with reconciliation instead of decisions. Constraint: I was not going to get an implementation team or custom development; whatever fixed this had to be standard reporting and configuration inside our existing setup. Action, in two layers: first the data, standardizing deliverables as weighted milestones inside a consistent WBS with planned dates, because no dashboard fixes inconsistent records; then the view, defining recurring report inputs and building a filterable dashboard, task order, business unit, contract period, with KPIs for open, closed, overdue, and near-due milestones and drill-down into the records. Result: reporting became consistent across periods, and funding and schedule risk became visible earlier, which changed when mitigation conversations happened. I am deliberate about two boundaries: the result is qualitative, I have no verified hours-saved number and will not invent one; and this was a project-delivery and reporting challenge solved with standard configuration, not an end-to-end SPM implementation. The transferable lesson: standardize the record structure before you build the view, or the view lies.",
+ maxNote:null,
+ followups:["What resistance did you hit and from whom?","Why weighted milestones specifically?","What would you do differently now?"],
+ terms:["Decision-ready view","Recurring report inputs"],
+ avoid:["Inventing a quantified outcome","Upgrading the story to an implementation"],
+ practice:"Tell the 60-second version aloud, twice, ending on the boundary sentence without trailing off.",
+ srcs:["Prepared Q15"]}
+];
+
+const BANKB1 = [
+{id:"b1",bank:"B",band:"Role scope",label:"Defend",q:"Walk me through your experience designing, developing, configuring, and maintaining ServiceNow solutions.",
+ testing:"Whether you can map the JD's core sentence onto your actual record without inflating any verb.",
+ jd:"\"Responsible for designing, developing, configuring, and maintaining solutions across the ServiceNow platform in support of mission requirements.\"",
+ evidence:[{t:"Production: maintained the delivery and reporting layer on TDL-064; limited project-level configuration.",tier:"PROD"},{t:"PDI: designed and built a scoped safety application end to end; built an approval flow in draft.",tier:"PDI"},{t:"Training: 21 courses, two paths, more than 36 hours.",tier:"STUDIED"}],
+ structure:"Take the four verbs one at a time and place each honestly.",
+ a30:"I will take the four verbs honestly. Designing and developing: demonstrated in my PDI, a scoped safety app and an approval flow. Configuring: limited project-level configuration in production, full app configuration in the PDI. Maintaining: the production reporting layer on TDL-064 was mine to keep accurate daily.",
+ a60:"Let me place each verb where my evidence actually is. Designing and developing: my demonstrable work is PDI, a scoped App Engine Studio application with a custom table, two roles, and seven ACLs, and an approval flow in Flow Designer, built to be reviewable through an update set. Configuring: in production, limited project-level configuration supporting delivery visibility; in the PDI, the full stack of forms, lists, roles, and access rules. Maintaining: on TDL-064 I maintained the live reporting layer executives and PMs depended on, through contract periods and changing inputs. What I have not done is production development on the platform, and I would rather anchor on demonstrable evidence than stretch a verb.",
+ a120:null,maxNote:"Sixty seconds places all four verbs; deeper detail lives in the specific modules that follow.",
+ followups:["Which of those four verbs is weakest for you?","Show me the design thinking in the safety app.","What did maintaining the reporting layer involve week to week?"],
+ terms:["Scoped application","Update set","Delivery visibility"],
+ avoid:["Claiming production development","Letting 'maintaining' imply platform administration"],
+ practice:"Four verbs, four placements, under 45 seconds.",srcs:["JD overview line","Resume","PDI lab records"]},
+
+{id:"b2",bank:"B",band:"Qualifications",label:"Remember",q:"Do you hold an active security clearance?",
+ testing:"A factual gate; also whether you answer factual questions crisply.",
+ jd:"Required: \"Active Secret Clearance.\"",
+ evidence:[{t:"Active Top Secret clearance, Department of Defense; Derivative Classification (DCSA) completed Sep 2025; DD Form 254 support experience.",tier:"PROD"}],
+ structure:"One sentence, then stop.",
+ a30:"Yes. I hold an active Top Secret clearance with the Department of Defense; the posting lists Secret.",
+ a60:"Yes. I hold an active Top Secret clearance with the Department of Defense, and I have spent twenty-plus years working in cleared DoD environments, including DD Form 254 and security-requirement support on my current task-order work and Derivative Classification training completed in September 2025. The posting lists an active Secret clearance as the requirement.",
+ a120:null,maxNote:"This is a one-breath factual answer; anything past 60 seconds is padding.",
+ followups:["When was it last adjudicated?","Any breaks in coverage?","Willing to undergo reinvestigation?"],
+ terms:["DD Form 254","Derivative Classification"],
+ avoid:["Speculating about adjudication dates not in your records"],
+ practice:"Answer in one sentence without elaborating unless asked.",srcs:["Resume clearance line"]},
+
+{id:"b3",bank:"B",band:"Qualifications",label:"Defend",q:"Your degree is in business administration. The posting asks for engineering or computer science. Talk about that.",
+ testing:"Whether you present the IS minor accurately and without defensiveness.",
+ jd:"Required: \"Bachelor's degree in Engineering, Computer Science, or related field.\"",
+ evidence:[{t:"BA Business Administration Management, Saint Leo University, Information Systems minor, 18 technology credits: C/C++ Programming, Systems Analysis & Design, Database Concepts & Programming, Decision Support Systems, Computer Systems, Business Information Systems.",tier:"STUDIED"},{t:"MBA-HRM; Ed.D. in progress, Instructional and Performance Technology, 4.0 GPA.",tier:"STUDIED"}],
+ structure:"Name the degree plainly, then the technical minor, then the graduate layer.",
+ a30:"My bachelor's is in business administration management with an Information Systems minor: eighteen technology credits including C and C++ programming, systems analysis and design, and database concepts. Above that sit an MBA and a doctorate in progress focused on performance technology and AI.",
+ a60:"The degree is a BA in business administration management, and the technical content lives in the Information Systems minor: eighteen technology credits covering C and C++ programming, systems analysis and design, database concepts and programming, decision support systems, computer systems, and business information systems. On top of that, an MBA in human resource management and a doctorate in progress in instructional and performance technology with a 4.0. Whether that reads as a related field is your call to make; my part is to be precise about what the transcript actually contains.",
+ a120:null,maxNote:"Sixty seconds; the transcript speaks for itself.",
+ followups:["Which technical course do you still use?","Why performance technology for a doctorate?","Any plans for formal CS coursework?"],
+ terms:["Information Systems minor","Systems analysis and design"],
+ avoid:["Overselling the minor as a CS degree","Apologizing for the degree"],
+ practice:"Name all six technical courses from memory.",srcs:["Resume education section"]},
+
+{id:"b4",bank:"B",band:"Qualifications",label:"Defend",q:"Do you have a DoD 8570.01 IAT or IAM Level II certification?",
+ testing:"A required-qualification fact check. Directness is the whole test.",
+ jd:"Required: \"DoD 8570.01 IAT or IAM Level II certification.\"",
+ evidence:[{t:"Not documented as held. CompTIA Security+ preparation underway; exam planned late Aug 2026.",tier:"NONE"}],
+ structure:"No, the plan with its date, stop. No speculation about waivers or outcomes.",
+ a30:"No. The posting lists 8570 IAT or IAM Level II as required, and I do not hold one today. I am preparing for CompTIA Security+, a common IAT Level II path, with the exam planned for late August 2026.",
+ a60:"No, I do not hold an 8570 IAT or IAM Level II certification today, and I know the posting lists it as required. What I can tell you factually: I am actively preparing for CompTIA Security+, which is a common IAT Level II qualifying certification, and my exam is planned for late August 2026. That is the honest position, and I will not speculate beyond it.",
+ a120:null,maxNote:"Never extend this answer. The 30-second version is the strong version.",
+ followups:["What happens if you don't pass in August?","Why isn't it done already?","Which 8570 category does Security+ satisfy?"],
+ terms:["DoD 8570.01","IAT Level II","Security+"],
+ avoid:["Speculating about waiverability or the employer's decision","Editorializing about the requirement"],
+ practice:"Deliver the 30-second version with a period at the end, not a trailing clause.",srcs:["Requirement r03","Resume certifications"]},
+
+{id:"b5",bank:"B",band:"Qualifications",label:"Defend",q:"The role requires five years of ServiceNow development, configuration, and administration. You don't have that.",
+ testing:"Composure and accuracy under the hardest requirement gap.",
+ jd:"Required: \"Minimum 5 years of IT experience focused on ServiceNow development, configuration, and administration.\"",
+ evidence:[{t:"Production use since August 2025, non-administrator.",tier:"PROD"},{t:"Independent study since July 2025.",tier:"STUDIED"},{t:"University and PDI record since July 22, 2026, including the public scoped app.",tier:"PDI"},{t:"Twenty-plus years of federal IT-adjacent technical delivery.",tier:"TRANSFER"}],
+ structure:"One accurate sentence on the gap, then the documented record, no over-explaining.",
+ a30:"Correct, I do not have five years of ServiceNow development. My documented record is production use since August 2025 in a non-administrator capacity, independent study since July 2025, and since July 22, 2026 a structured University and PDI record including a public scoped application built in App Engine Studio.",
+ a60:"Correct, and I applied knowing that. What I bring instead is documented and specific: production use of the platform since August 2025 on a federal task order, in a non-administrator capacity, where the program's milestones, dashboards, and reporting lived in ServiceNow; independent study since July 2025; and since July 22, 2026 a structured record, 21 courses, two learning paths, more than 36 hours, plus a public scoped application in App Engine Studio with a verified security model. Alongside that, twenty years of delivering secure federal technology programs. I state the gap in one sentence because accuracy there is part of how I work.",
+ a120:null,maxNote:"Do not stretch this. One sentence of gap, one paragraph of record, stop.",
+ followups:["How fast could you close the development gap?","What's the hardest platform thing you've built so far?","Why should we take the ramp-up risk?"],
+ terms:["Non-administrator capacity","Documented record"],
+ avoid:["Evading the requirement","Over-explaining or listing excuses","Any suitability argument; state record, not verdict"],
+ practice:"Say the first sentence alone, neutrally, five times.",srcs:["Requirement r04","Cover letter posture"]},
+
+{id:"b6",bank:"B",band:"Technical spine",label:"Defend",q:"Describe your JavaScript experience.",
+ testing:"Whether a NONE-tier item gets an honest answer with the real adjacent base named.",
+ jd:"Required: \"Strong experience with JavaScript, REST APIs, SQL, and Linux.\"",
+ evidence:[{t:"No documented hands-on JavaScript evidence.",tier:"NONE"},{t:"Academic C/C++ and SQL coursework.",tier:"STUDIED"},{t:"Declarative platform work: Flow Designer in PDI, App Engine Studio configuration.",tier:"PDI"}],
+ structure:"Direct none, nearest real base, platform framing, stop.",
+ a30:"I do not have documented hands-on JavaScript experience. My programming foundation is academic C and C++ and SQL, and my platform work so far is declarative: Flow Designer and App Engine Studio configuration in my PDI. From training I know where JavaScript sits in the platform: client scripts, business rules, and script includes.",
+ a60:"I will give you the accurate version rather than a stretched one. I do not have documented hands-on JavaScript experience. The real foundation underneath is academic: C and C++ programming and SQL coursework from my Information Systems minor, so typed languages, control flow, and data structures are not foreign. My platform work to date has been deliberately declarative, Flow Designer logic and App Engine Studio configuration in my PDI, which is also ServiceNow's own configure-first guidance. And from training I know exactly where JavaScript lives in the platform when it is needed: client scripts, business rules, UI policies' script fields, and script includes.",
+ a120:null,maxNote:"An honest answer here runs about 45 to 60 seconds. Past that you would be padding a gap.",
+ followups:["Read this client script; what does it do?","How would you learn platform JavaScript quickly?","When is a business rule the wrong tool?"],
+ terms:["Client script","Business rule","Script include"],
+ avoid:["Converting C++ coursework into JavaScript proficiency","Implying PDI scripting you have not documented"],
+ practice:"Deliver the none sentence first, without softening words before it.",srcs:["Requirement r05"]},
+
+{id:"b7",bank:"B",band:"Technical spine",label:"Explain",q:"How have you worked with REST APIs?",
+ testing:"Concept accuracy plus tier honesty on a STUDIED item.",
+ jd:"Required: \"Strong experience with JavaScript, REST APIs, SQL, and Linux.\"",
+ evidence:[{t:"Integration Hub and API exposure through ServiceNow University and PDI training: spokes, actions, REST concepts.",tier:"STUDIED"}],
+ structure:"Tier first, then correct concept, then the platform context.",
+ a30:"My REST exposure is training and PDI foundation, not production engineering: Integration Hub coursework covering spokes, actions, and how the platform consumes and exposes REST endpoints. Conceptually: resources addressed by URL, standard verbs, stateless requests, JSON payloads, authenticated by keys or OAuth.",
+ a60:"I will tier it honestly: studied, not production. Through ServiceNow University and PDI work I covered Integration Hub, spokes as packaged integration content, actions as reusable steps, and how the platform both consumes and exposes REST: the Table API pattern, standard verbs against resource URLs, stateless requests, JSON in and out, credentials and OAuth for authentication. I understand why REST matters in this stack, because it is how ServiceNow talks to everything else. What I have not done is build or operate a production REST integration, and I keep that distinction explicit.",
+ a120:null,maxNote:"Sixty seconds; production war stories do not exist and will not be invented.",
+ followups:["GET versus POST versus PATCH?","What is a spoke, precisely?","How would you secure an inbound integration?"],
+ terms:["Table API","Spoke","Action","OAuth"],
+ avoid:["Upgrading coursework to hands-on production integration"],
+ practice:"Explain REST to a non-engineer in three sentences.",srcs:["Requirement r06","Prepared Q10"]},
+
+{id:"b8",bank:"B",band:"Technical spine",label:"Explain",q:"Describe your SQL and database experience.",
+ testing:"Whether academic evidence and management-level exposure are presented at their true tiers.",
+ jd:"Required line includes SQL; Desired: \"relational databases such as MySQL, Oracle, or SQL Server.\"",
+ evidence:[{t:"Academic: SQL and MySQL Workbench, relational database design, Database Concepts & Programming coursework.",tier:"STUDIED"},{t:"Managed workstreams including data/database support at CIWT/CNATT.",tier:"TRANSFER"}],
+ structure:"Hands-on academic layer, then the management layer, clearly separated.",
+ a30:"Hands-on, my SQL is academic: MySQL Workbench, relational design, and database programming coursework, so schemas, joins, and normalization are familiar ground. Professionally I have managed data and database support workstreams, which is management-level exposure, not hands-on DBA work, and I keep those separate.",
+ a60:"Two layers, and I will label both. Hands-on: academic coursework in database concepts and programming using SQL and MySQL Workbench, plus relational database design, so I can read a schema, write joins, and reason about normalization and keys. Professional: at CIWT and CNATT I manage workstreams that include data and database support, which means I own delivery and requirements around database work, not the administration itself. In the platform context, I also understand that ServiceNow abstracts its database behind tables, the dictionary, and GlideRecord-style access rather than raw SQL, which is from training.",
+ a120:null,maxNote:"Sixty seconds covers both layers truthfully.",
+ followups:["Write a join for two tables I describe.","What is normalization and when would you break it?","How does ServiceNow's data layer differ from raw SQL?"],
+ terms:["Normalization","Join","Data dictionary"],
+ avoid:["Converting workstream management into DBA experience"],
+ practice:"Say the two-layer split in one breath: academic hands-on, professional management-level.",srcs:["Requirement r07","Resume education and CIWT bullets"]},
+
+{id:"b9",bank:"B",band:"Technical spine",label:"Defend",q:"What is your Linux experience?",
+ testing:"Clean handling of a flat gap.",
+ jd:"Required: \"Strong experience with JavaScript, REST APIs, SQL, and Linux.\"",
+ evidence:[{t:"No documented Linux evidence.",tier:"NONE"}],
+ structure:"Direct none, one accurate context sentence, stop.",
+ a30:"I do not have documented Linux experience. My technical foundation is academic systems coursework, and my platform work runs through the browser-based ServiceNow environment.",
+ a60:null,a120:null,maxNote:"Thirty seconds is the whole honest answer. Let a follow-up decide if concepts are wanted.",
+ followups:["Have you used any command line at all?","Does that concern you for this role?","How would you close it if needed?"],
+ terms:[],
+ avoid:["Inventing shell familiarity","Filling silence after the answer"],
+ practice:"Practice stopping after the second sentence.",srcs:["Requirement r08"]},
+
+{id:"b10",bank:"B",band:"Technical spine",label:"Explain",q:"Explain SOAP web services and your experience with them.",
+ testing:"Concept clarity on a NONE-tier item.",
+ jd:"Required: \"Solid understanding of web services (SOAP) and object-oriented programming principles.\"",
+ evidence:[{t:"No documented SOAP experience; concept understanding from integration training context.",tier:"NONE"}],
+ structure:"None first, then a correct compact concept, framed as understanding.",
+ a30:"No hands-on SOAP experience. Conceptually: XML-based web services with a formal contract, the WSDL, strongly typed envelopes, and operations, heavier than REST's resource-and-verb model. Legacy and government systems still speak it, which is why it stays on requirement lists.",
+ a60:"I have no documented SOAP experience, so let me give you understanding rather than a pretended history. SOAP is XML-based messaging with a formal service contract, the WSDL, which defines operations and types; requests travel as structured envelopes, and the strictness buys you contract validation at the cost of weight. REST took over because resources, verbs, and JSON are lighter, but SOAP persists in legacy and government integrations, and ServiceNow can consume and expose both, which I know from the platform's integration training context.",
+ a120:null,maxNote:"Sixty seconds of accurate concept beats two minutes of pretend experience.",
+ followups:["What is a WSDL?","When would SOAP beat REST today?","Has ServiceNow deprecated either?"],
+ terms:["WSDL","Envelope","Contract-first"],
+ avoid:["Implying you have consumed a SOAP service hands-on"],
+ practice:"One-sentence SOAP definition, one-sentence contrast with REST.",srcs:["Requirement r09"]},
+
+{id:"b11",bank:"B",band:"Technical spine",label:"Explain",q:"Explain object-oriented programming principles.",
+ testing:"Whether the academic base is real and current enough to explain cleanly.",
+ jd:"Required: \"Solid understanding of ... object-oriented programming principles.\"",
+ evidence:[{t:"C/C++ Programming coursework, Information Systems minor.",tier:"STUDIED"}],
+ structure:"The four principles with one concrete line each, then the tier.",
+ a30:"Encapsulation: data and behavior bound together with controlled access. Inheritance: specialized classes extending general ones. Polymorphism: one interface, many implementations. Abstraction: exposing what a thing does, hiding how. My base is C++ coursework, and I keep it labeled academic.",
+ a60:"Four principles, concretely. Encapsulation: a class owns its data and exposes controlled methods, so state cannot be corrupted from outside. Inheritance: specialized types extend a general one, a SafetyIssue extending Task, to reuse structure and behavior. Polymorphism: callers use one interface while different classes provide different implementations underneath. Abstraction: you program against what something does, not how. That maps directly onto ServiceNow's data model, where tables extend tables and task is the great parent class, which is one reason the platform felt legible to me. My foundation is C and C++ coursework, academic and labeled as such.",
+ a120:null,maxNote:"Sixty seconds; deeper only if the interviewer pulls.",
+ followups:["Give a platform example of inheritance.","Composition versus inheritance?","What OOP mistakes do beginners make?"],
+ terms:["Encapsulation","Inheritance","Polymorphism","Abstraction"],
+ avoid:["Claiming professional software engineering"],
+ practice:"Four principles, four sentences, no notes.",srcs:["Requirement r10","Resume coursework"]},
+
+{id:"b12",bank:"B",band:"Technical spine",label:"Defend",q:"Describe your experience with ITIL v3 processes.",
+ testing:"Whether process-discipline evidence is offered honestly without claiming ITIL formally.",
+ jd:"Required: \"Experience working with ITIL v3 processes.\"",
+ evidence:[{t:"No formal ITIL environment or certification documented.",tier:"NONE"},{t:"Change and release coordination in ServiceNow on TDL-064; twenty years of procedure-driven, safety-critical operations.",tier:"TRANSFER"}],
+ structure:"Direct none, then the genuinely adjacent process discipline, correctly labeled.",
+ a30:"I have not worked in a formally ITIL-labeled environment and hold no ITIL certification. The adjacent reality: I coordinated change and release in ServiceNow on my task order, and I spent twenty years in procedure-driven, safety-critical operations, so process discipline is native even where the ITIL vocabulary is new.",
+ a60:"Directly: no formal ITIL environment, no ITIL certification. What I do have is the substance ITIL formalizes. On TDL-064 I coordinated change and release activity through ServiceNow, sequencing delivery into controlled baselines. Before that, twenty years of Navy air traffic control, which is nothing but disciplined process under consequence: procedural compliance, qualification management, controlled handoffs. From training I know the ITIL v3 frame, service strategy through continual improvement, and the operational core of incident, problem, and change. So the vocabulary is study-level; the process discipline underneath it is twenty years deep.",
+ a120:null,maxNote:"Sixty seconds; do not lecture ITIL theory you have not practiced.",
+ followups:["Incident versus problem?","What is a change advisory board?","Which ITIL process would you lean on first here?"],
+ terms:["Incident vs problem","Change management","Service lifecycle"],
+ avoid:["Claiming ITIL-governed work history","Reciting the full framework as if lived"],
+ practice:"Say the split: vocabulary studied, discipline lived.",srcs:["Requirement r11"]},
+
+{id:"b13",bank:"B",band:"Technical spine",label:"Explain",q:"What hands-on ServiceNow integration work have you done?",
+ testing:"The word hands-on. The honest tier is training plus PDI foundation.",
+ jd:"Required: \"Hands-on experience with ServiceNow platform integrations and toolsets.\"",
+ evidence:[{t:"Integration Hub training: spokes, actions, APIs.",tier:"STUDIED"},{t:"PDI foundation work in the same areas.",tier:"PDI"}],
+ structure:"Tier first, what you actually touched, boundary.",
+ a30:"My integration work is training and PDI foundation, not production engineering: Integration Hub coursework and lab exposure covering spokes, actions, and the platform's REST surface. I have not built or operated a production integration, and I say that plainly because the question says hands-on.",
+ a60:"Because you said hands-on, I will be exact about which hands and where. In my PDI and coursework I worked with Integration Hub: spokes as packaged integration content, actions as the reusable building blocks, and the platform's API surface for moving records in and out. That is real keyboard time, in a lab. What it is not is production integration engineering: no live endpoints, no credential management under load, no error handling against a real partner system. On my production program, integrations existed and fed the records I reported on, and they were not mine. That is the accurate shape of it.",
+ a120:null,maxNote:"Sixty seconds; the production stories belong to systems that were not yours.",
+ followups:["What does a spoke contain?","How would you troubleshoot a failing integration?","Inbound versus outbound authentication?"],
+ terms:["Integration Hub","Spoke","Action"],
+ avoid:["Blurring lab work into production","Claiming the TDL-064 integrations"],
+ practice:"Lab-hands sentence first; production boundary second.",srcs:["Requirement r12","Prepared Q10"]},
+
+{id:"b14",bank:"B",band:"Technical spine",label:"Defend",q:"How have you supported DevSecOps practices?",
+ testing:"Whether release-discipline experience is mapped honestly without claiming pipeline engineering.",
+ jd:"Required: \"Experience supporting DevSecOps practices, including software development, release, and maintenance.\"",
+ evidence:[{t:"Release and maintenance coordination on TDL-064: deliverable reviews, acceptance and invoicing readiness, DD250/MIRR planning, security-support workstream, DD Form 254 support.",tier:"TRANSFER"}],
+ structure:"The supporting-role truth, concretely, then the engineering boundary.",
+ a30:"From the coordination side: on TDL-064 I ran deliverable reviews, acceptance readiness, DD250 and MIRR planning, and the security-support workstream with DD Form 254 requirements, sequencing software delivery into a secure federal environment. I have not engineered CI/CD pipelines; my role was governing release and maintenance, not building the tooling.",
+ a60:"I support the release-and-maintenance half of that phrase from the program side, in a security-first environment. On TDL-064: deliverable reviews and validation coordination, acceptance and invoicing readiness, DD250 and MIRR planning, PO and CO routing, and a security-support workstream carrying DD Form 254 requirements, all of it sequencing hardware-in-the-loop and software work into a controlled federal baseline. That is the Sec and the Ops parts as governance. The boundary: I have not built or operated CI/CD pipelines, and I will not present release coordination as pipeline engineering. If the team's DevSecOps need is discipline, evidence, and secure release governance, that is documented; if it is toolchain construction, that is not my record.",
+ a120:null,maxNote:"Sixty seconds; the pipeline half is not yours to narrate.",
+ followups:["What is DD250 acceptance, for a civilian?","Where does security enter your release process?","What CI/CD tools have you at least seen used?"],
+ terms:["DD250/MIRR","DD Form 254","Release governance"],
+ avoid:["Claiming pipeline or toolchain engineering"],
+ practice:"Say the governance-not-tooling boundary sentence cleanly.",srcs:["Requirement r13","Resume TDL-064 bullets"]},
+
+{id:"b15",bank:"B",band:"Platform build",label:"Explain",q:"Describe your App Engine Studio experience.",
+ testing:"Your most demonstrable JD-matching artifact. Depth, specificity, and the PDI label.",
+ jd:"Required: \"Experience with ServiceNow App Engine Studio and Creator Studio.\"",
+ evidence:[{t:"Scoped safety application, Zurich PDI: custom table, two roles, seven ACLs, row and field security, impersonation testing, form/list configuration, update set. Public on GitHub.",tier:"PDI"},{t:"Documented lab record with verification evidence dated August 7, 2026.",tier:"PDI"}],
+ structure:"What you built, the security model in detail, how you verified it, the label.",
+ a30:"I built a scoped safety-issue application in App Engine Studio in my Zurich PDI: custom table, two roles, seven ACLs with row and field security, form and list configuration, packaged as an update set and public on GitHub. I verified the security model by impersonation testing. It is lab work, and I label it that way.",
+ a60:"Concretely: a scoped safety-issue tracking application, built in App Engine Studio in my Zurich PDI and public on GitHub. Custom table for safety issues; two roles, a user role for agents and an admin role for managers, attached through groups; seven ACLs implementing the security model. The interesting part is the row-level rule: agents' read ACL carries a data condition, assigned-to is dynamic Me, so an agent sees only their own issues, while the manager read ACL has an empty condition and sees everything, because any matching read rule grants access. A field-level ACL hides manager notes from agents, and delete is restricted to the manager role. I verified all of it by impersonating each test user and checking exact record counts and field visibility, then packaged the app as an importable update set. PDI work, not production, and I say so unprompted when it matters.",
+ a120:"I will walk it as a build review. Purpose: a safety-issue tracker, built as a scoped application so everything, table, roles, ACLs, lives in its own namespace. Data: one custom table for safety issues with an assigned-to reference. Security model, which is the part I am proudest of: two roles, a user role for agents and an admin role for managers, granted through groups so membership drives permissions; seven ACLs in total. The core is two read rules on the same table that work together: the agent rule requires the user role and carries a data condition, assigned-to is dynamic Me, meaning the logged-in user; the manager rule requires the admin role with an empty condition. Because the platform grants read if any rule passes, agents see exactly their own records and managers see all of them. On top of that, a field-level ACL protects the manager-notes field from agents, and delete is restricted to managers. Verification: I impersonated each test user and confirmed the exact behavior, the agent seeing only their two assigned records with the protected field hidden and no delete button, the manager seeing all records, both fields, and delete. I also hit the real-world gotchas, like the platform dropping a dynamic condition on first save, which taught me to reopen and verify every ACL after saving. Packaged as an update set, public on GitHub. All of it is PDI lab work on the Zurich release, and that label is part of the answer.",
+ maxNote:null,
+ followups:["Why does the manager rule need an empty condition?","What broke during the build?","Why an update set instead of just screenshots?"],
+ terms:["Scoped app","Row-level security","Dynamic condition","Impersonation","Update set"],
+ avoid:["Letting it read as production deployment","Vagueness; this one must be specific"],
+ practice:"Whiteboard the model from memory: table, two roles, two read rules, field rule, delete rule.",srcs:["Requirement r14","Resume portfolio line","PDI ACL lab record"]},
+
+{id:"b16",bank:"B",band:"Platform build",label:"Explain",q:"Have you used Creator Studio?",
+ testing:"Clean gap handling next to a strong adjacent artifact.",
+ jd:"Required: \"Experience with ServiceNow App Engine Studio and Creator Studio.\"",
+ evidence:[{t:"Not documented separately from App Engine Studio.",tier:"NONE"},{t:"App Engine Studio scoped app, PDI.",tier:"PDI"}],
+ structure:"No, then the adjacent AES evidence in one sentence.",
+ a30:"Not specifically. My documented low-code build work is in App Engine Studio, where I built the scoped safety application in my PDI. Creator Studio's simplified app-creation flow would be a short step from where I already work.",
+ a60:null,a120:null,maxNote:"Thirty seconds; the AES module carries the depth.",
+ followups:["What is Creator Studio for, as you understand it?","How different can it be from AES?"],
+ terms:["Creator Studio"],
+ avoid:["Claiming Creator Studio hands-on time"],
+ practice:"One-breath answer, pivot once, stop.",srcs:["Requirement r15"]},
+
+{id:"b17",bank:"B",band:"Modules",label:"Explain",q:"Describe your ITSM experience, including Incident and Problem Management.",
+ testing:"Module knowledge tiering: coursework plus production-adjacent use, without claiming ITSM operations.",
+ jd:"Required modules: \"ITSM ... Incident/Problem Management.\"",
+ evidence:[{t:"Administration Fundamentals coursework covering the ITSM core.",tier:"STUDIED"},{t:"Change/release coordination performed in ServiceNow on TDL-064.",tier:"PROD"}],
+ structure:"Tier the knowledge, name the production-adjacent reality, hold the boundary.",
+ a30:"My ITSM module knowledge is from Administration Fundamentals coursework: incident for restoring service, problem for root cause, change for controlled modification. In production my use touched the change and release side, coordinating delivery through the platform. I have not worked an ITSM operations queue.",
+ a60:"Let me tier it. Coursework: Administration Fundamentals gave me the ITSM core, incident as restore-service-fast, problem as find-and-fix-root-cause, change as controlled modification, and how they connect on the task backbone. Production-adjacent: on TDL-064 my platform use included change and release coordination, so I have lived the change side as a practitioner inside a program, not as a service desk. What I have not done: worked incidents or problems operationally, run an ITSM queue, or configured those modules. For a developer role, my read is that you need me fluent in the objects and honest about the operational miles, and that is what I am giving you.",
+ a120:null,maxNote:"Sixty seconds tiers it fully.",
+ followups:["Incident versus problem in one sentence?","What table does everything task-like extend?","What is a normal versus emergency change?"],
+ terms:["Incident","Problem","Change","Task table"],
+ avoid:["Claiming service-desk or ITSM operations experience"],
+ practice:"Say the three-object trio with their one-line purposes.",srcs:["Requirement r16","Resume TDL-064 bullets"]},
+
+{id:"b18",bank:"B",band:"Modules",label:"Explain",q:"What ITOM work have you done?",
+ testing:"Flat-gap honesty with accurate concept.",
+ jd:"Required modules: \"ITOM.\"",
+ evidence:[{t:"Not documented.",tier:"NONE"}],
+ structure:"None, one concept sentence, stop.",
+ a30:"None documented. I understand its scope from training context: discovery finding what is on the network, service mapping relating it to services, event management turning monitoring noise into actionable signal. My documented platform work sits on the delivery and reporting side.",
+ a60:null,a120:null,maxNote:"Thirty seconds. A flat gap answered cleanly.",
+ followups:["What is discovery, mechanically?","Why does service mapping matter to ITSM?"],
+ terms:["Discovery","Service mapping","Event management"],
+ avoid:["Inflating awareness into exposure"],
+ practice:"Answer and stop.",srcs:["Requirement r17"]},
+];
+
+const BANKB2 = [
+{id:"b19",bank:"B",band:"Modules",label:"Explain",q:"What IT Asset Management experience do you have?",
+ testing:"Flat-gap honesty with the genuinely adjacent program work named at its true tier.",
+ jd:"Required modules: \"IT Asset Management.\"",
+ evidence:[{t:"Module not documented.",tier:"NONE"},{t:"Logistics workstream and government-furnished baseline coordination on federal contracts.",tier:"TRANSFER"}],
+ structure:"None on the module, adjacent program-side truth, stop.",
+ a30:"No documented ITAM module experience. The adjacent reality is program-side: I have coordinated logistics workstreams and government-furnished baselines on federal contracts, so asset accountability is familiar territory, just not through the ITAM module.",
+ a60:null,a120:null,maxNote:"Thirty seconds; the adjacency is program-side and should not grow.",
+ followups:["Hardware versus software asset management?","What is a CI versus an asset?"],
+ terms:["Asset vs CI","Government-furnished equipment"],
+ avoid:["Turning logistics coordination into ITAM configuration"],
+ practice:"One-breath answer with the adjacency labeled program-side.",srcs:["Requirement r18","Resume TDL-064 bullets"]},
+
+{id:"b20",bank:"B",band:"Modules",label:"Explain",q:"What is your experience with Automation Engine?",
+ testing:"Whether coursework plus real PDI flow work is presented at the right tier.",
+ jd:"Required modules: \"Automation Engine.\"",
+ evidence:[{t:"Coursework: Now Assist, AI Builder, AI Agents.",tier:"STUDIED"},{t:"Flow Designer practiced hands-on in the PDI, including a built approval flow in draft.",tier:"PDI"}],
+ structure:"Split the tier: studied for the AI layer, PDI hands-on for Flow Designer.",
+ a30:"Two tiers. Hands-on in my PDI: Flow Designer, where I built an approval flow with a record trigger, approval action, If/Else logic, and record updates. Coursework: Now Assist, AI Builder, and AI Agents. I have not run automation in production.",
+ a60:"I will split it by tier because the honest answer has two. Hands-on, PDI: Flow Designer. I built an approval flow end to end, record trigger with a condition, Ask for Approval with an explicit rule and approver, If/Else on the approval state, Update Record actions on both branches; it is saved in draft with activation and testing as documented next steps. I also know the surrounding mechanics: data pills, error handling, execution details, run-as options. Coursework: the AI layer, Now Assist, AI Builder, and AI Agents, which I have studied but not applied in the platform. Production automation: none, and my program's production flows were not mine.",
+ a120:null,maxNote:"Sixty seconds carries both tiers.",
+ followups:["What flow logic types exist?","What is a data pill?","Where would you add error handling in your flow?"],
+ terms:["Flow Designer","Data pill","Error handler","Now Assist"],
+ avoid:["Presenting the AI coursework as applied work","Presenting the draft flow as activated"],
+ practice:"Name your flow's five steps in order from memory.",srcs:["Requirement r19","PDI Flow Designer lab record"]},
+
+{id:"b21",bank:"B",band:"Modules",label:"Explain",q:"Describe your Service Catalog experience.",
+ testing:"STUDIED-tier honesty with accurate mechanics.",
+ jd:"Required modules: \"Service Catalog.\"",
+ evidence:[{t:"Coursework covering catalog structure and record producers.",tier:"STUDIED"}],
+ structure:"Tier, then compact mechanics, then boundary.",
+ a30:"Coursework, not production. I understand the structure: catalog items with variables, record producers creating records from catalog-style forms, flows fulfilling requests behind them. I have not built or administered a production catalog.",
+ a60:"My Service Catalog knowledge is coursework, and here is what it contains. Catalog items as the offerings users request, with variables capturing the inputs; record producers as catalog-style forms that create records on a target table, which is the front door for a lot of intake design; and fulfillment behind the item, where a flow picks up the request, and I have built exactly that trigger type's mechanics in my PDI flow work. What I have not done is design, build, or administer a production catalog, so item design under real demand is knowledge, not experience.",
+ a120:null,maxNote:"Sixty seconds.",
+ followups:["Record producer versus catalog item?","What are variables and variable sets?","How does a catalog request trigger a flow?"],
+ terms:["Catalog item","Record producer","Variable set"],
+ avoid:["Claiming production catalog work"],
+ practice:"Define record producer in one sentence.",srcs:["Requirement r20"]},
+
+{id:"b22",bank:"B",band:"Modules",label:"Explain",q:"Tell me about your Incident and Problem Management knowledge specifically.",
+ testing:"Precision on the two most-used ITSM objects.",
+ jd:"Required modules: \"Incident/Problem Management.\"",
+ evidence:[{t:"Administration Fundamentals coursework.",tier:"STUDIED"}],
+ structure:"Definitions with the distinction, lifecycle sketch, boundary.",
+ a30:"From coursework: an incident is an unplanned interruption, and the goal is restoring service fast; a problem is the underlying cause of one or more incidents, and the goal is permanent fix. Incidents get resolved, problems get root-caused, and known errors carry workarounds until the fix lands.",
+ a60:"From coursework, with the distinction that matters: incident management restores service, problem management prevents recurrence. An incident is the interruption itself; you triage by impact and urgency, restore service, and close. A problem is the cause underneath, often opened when incidents cluster; you root-cause it, and until the permanent fix ships, a known error with a workaround keeps the service desk fast. The two connect on the platform through related records, and both live on the task backbone, so assignment, SLAs, and reporting behave consistently. My tier: studied through Administration Fundamentals, not operated in production.",
+ a120:null,maxNote:"Sixty seconds.",
+ followups:["What is a known error?","Impact versus urgency versus priority?","When would you open a problem from an incident?"],
+ terms:["Known error","Impact/urgency/priority","Workaround"],
+ avoid:["Operational anecdotes you do not have"],
+ practice:"One sentence each: incident, problem, known error.",srcs:["Requirement r16"]},
+
+{id:"b23",bank:"B",band:"Modules",label:"Explain",q:"Describe your ServiceNow reporting experience.",
+ testing:"Your strongest JD-required module. Depth expected; this is where you spend.",
+ jd:"Required modules: \"Reporting.\"",
+ evidence:[{t:"Production dashboard and reporting layer on TDL-064: interactive filters, KPIs, drill-down, executive and PM audiences.",tier:"PROD"}],
+ structure:"Lead with production, walk one artifact end to end, name the data-discipline lesson.",
+ a30:"This is my strongest module, and it is production evidence: I built and maintained the leadership reporting layer on TDL-064, interactive filters for task order, business unit, and contract period, KPIs for open, closed, overdue, and near-due milestones, and drill-down into project records, serving executives and PMs from one page.",
+ a60:"Production evidence, so let me be specific. On TDL-064 I built and maintained the leadership reporting layer: interactive filters for task order, business unit, and contract period; current-state KPIs, open, closed, overdue, and near-due milestones; progress views; and drill-down from any number into the underlying records. One page served executives and project managers, filters changing the view, so there was one version of the truth. The lesson I carry into any reporting work: standardize the record structure first, we standardized deliverables as weighted milestones in a consistent WBS, or the dashboard lies. Boundary: the integrations feeding those records were not mine, and my claim is the reporting layer I can reconstruct end to end.",
+ a120:null,maxNote:"Sixty seconds here; the full build story lives in the dashboards module and the challenge story.",
+ followups:["Report versus dashboard versus workspace?","How did you control who saw what?","What is your data-quality tell on a suspicious KPI?"],
+ terms:["Interactive filter","KPI","Drill-down"],
+ avoid:["Claiming Performance Analytics","Claiming the feeding integrations"],
+ practice:"Walk the overdue-milestone KPI chain aloud in 30 seconds.",srcs:["Requirement r21","Prepared Q8"]},
+
+{id:"b24",bank:"B",band:"Modules",label:"Explain",q:"What Configuration Management and CMDB experience do you have?",
+ testing:"The CSDM trap again, from the JD side.",
+ jd:"Required modules: \"Configuration Management.\"",
+ evidence:[{t:"Conceptual: CIs and relationships, deliverables tied to CIs, CSDM as the prescribed data model.",tier:"STUDIED"}],
+ structure:"Tier, correct concepts including CSDM, boundary.",
+ a30:"Conceptual, from training: the CMDB stores configuration items and their relationships, and CSDM is the prescribed model for structuring that data, a standard you conform to, not an application you install. I have not populated or governed a production CMDB.",
+ a60:"My tier is studied, and the concepts are solid. The CMDB is the repository: configuration items and the relationships between them, which is what makes impact analysis possible, this change touches this CI which supports this service. CSDM, the Common Service Data Model, is the prescribed standard for how you structure and relate that data; it is a conformance journey, not an installable product, and mistaking it for one is a known tell, so I do not. Conceptually I also understand the delivery seam I sat next to: deliverables and changes tying to CIs. What I have not done: discovery, CI population, data governance, or CMDB administration in production.",
+ a120:null,maxNote:"Sixty seconds.",
+ followups:["What is a CI class?","Why does CMDB data quality decay?","What does CSDM conformance actually involve?"],
+ terms:["Configuration item","CI relationship","CSDM"],
+ avoid:["Calling CSDM an app or integration","Claiming CMDB population or governance"],
+ practice:"CSDM sentence again: the model, not the database.",srcs:["Requirement r22","Prepared Q10"]},
+
+{id:"b25",bank:"B",band:"Working style",label:"Defend",q:"How do you approach customer service and continuous improvement?",
+ testing:"Whether the orientation is demonstrated with evidence rather than asserted.",
+ jd:"Required: \"Strong customer service orientation with a focus on continuous improvement.\"",
+ evidence:[{t:"CIWT/CNATT: mapping current-state processes, identifying delivery inefficiencies, modernization with adoption and sustainment discipline.",tier:"PROD"},{t:"HPT practice: distinguishing training needs from process, resource, information, organizational, or technology barriers.",tier:"PROD"},{t:"96% graduation rate sustained while modernizing curriculum; 100% retention leading 64 people.",tier:"TRANSFER"}],
+ structure:"The method, one concrete evidence line per half, stop.",
+ a30:"My continuous-improvement method is diagnostic: map the current state, find the real barrier, and fix that, because half the time the problem is process or information, not technology. Customer service, to me, is the stakeholder seeing their problem understood and their time respected, and my programs run on that.",
+ a60:"I run improvement as diagnosis, not enthusiasm. At CIWT and CNATT I map current-state processes, identify delivery inefficiencies, and use performance-technology discipline to distinguish a training problem from a process, resource, information, or technology barrier, because fixing the wrong one wastes everyone's year. Then adoption and sustainment get engineered, pilots, remediation, quality review, not assumed. Customer service is the same posture pointed outward: government stakeholders, end users, and subcontractors each get their constraints understood and their time respected, which is why my reporting work put one accurate page in front of everyone instead of making each audience ask.",
+ a120:null,maxNote:"Sixty seconds with evidence beats two minutes of values talk.",
+ followups:["Give an improvement you drove that failed first.","How do you handle a stakeholder who wants the wrong fix?","What does respect for the customer look like under deadline?"],
+ terms:["Performance barrier analysis","Adoption and sustainment"],
+ avoid:["Values assertions with no artifact attached"],
+ practice:"Name one barrier-diagnosis example in two sentences.",srcs:["Requirement r23","Resume CIWT bullets"]},
+
+{id:"b26",bank:"B",band:"Working style",label:"Defend",q:"How do you communicate with stakeholders at all levels?",
+ testing:"Evidence-backed communication range.",
+ jd:"Required: \"Excellent written and verbal communication skills with the ability to engage stakeholders at all levels.\"",
+ evidence:[{t:"Executive briefings; CDRL-aligned reporting translating technical status into decisions.",tier:"PROD"},{t:"I/ITSEC 2025 author and invited presenter, NTSA-selected.",tier:"PROD"},{t:"Instructor leadership: 36 instructors supervised, 3,542 training hours delivered.",tier:"TRANSFER"}],
+ structure:"The principle, then three tiers of evidence: executive, technical, instructional.",
+ a30:"By translating, not broadcasting. Executives get decisions and risk posture; technical teams get specifics and dependencies; end users get what changes for them. Evidence: CDRL-grade reporting and executive briefs on federal programs, a national-conference presentation at I/ITSEC 2025, and years of instructor leadership.",
+ a60:"My rule is that communication is translation: the same technical truth becomes a decision brief for an executive, a dependency conversation for an engineer, and an adoption message for an end user, and my job is keeping all three versions accurate to each other. The evidence spans the range: I author and approve CDRL-aligned program reporting that turns technical status and risk posture into executive decisions; I was selected by NTSA to present at I/ITSEC 2025, which is a room of skeptical professionals; and I spent years leading 36 instructors delivering thousands of training hours, which teaches you how understanding actually gets built. Written and verbal, formal and live, up and down the chain.",
+ a120:null,maxNote:"Sixty seconds.",
+ followups:["Tell me about delivering bad news upward.","How do you brief a technical dispute to a non-technical decision maker?","What was the I/ITSEC talk about?"],
+ terms:["CDRL","Decision-ready reporting"],
+ avoid:["Generic soft-skill claims without the artifacts"],
+ practice:"One breath: translate, three audiences, three artifacts.",srcs:["Requirement r24","Resume"]},
+
+{id:"b27",bank:"B",band:"Working style",label:"Defend",q:"How do you manage multiple priorities in a dynamic environment?",
+ testing:"Evidence of real concurrent load, not time-management platitudes.",
+ jd:"Required: \"Ability to manage multiple priorities in a dynamic environment and work independently or collaboratively.\"",
+ evidence:[{t:"Concurrent roles: CIWT/CNATT portfolio May 2023 to present, plus TDL-064 Aug 2025 to May 2026.",tier:"PROD"},{t:"RAPCON watch supervision: 64-person team, 409K+ mishap-free operations.",tier:"TRANSFER"}],
+ structure:"Name the concurrent load, the mechanism, then the collaborative/independent split.",
+ a30:"With structure, not heroics. For ten months I ran a multi-workstream training portfolio and the TDL-064 task order concurrently, and the mechanism was WBS discipline, integrated schedules, and honest dependency tracking, so priority calls were visible instead of personal. Before that, air traffic control, where priority management is the entire job.",
+ a60:"My evidence is concurrent load carried in public. From August 2025 to May 2026 I ran my CIWT and CNATT workstreams and the TDL-064 task order at the same time, and what made it work was structure: WBS-decomposed deliverables, integrated milestones and schedules, risk and dependency trackers, so when priorities collided the tradeoff was on paper and briefable, not a private judgment call. I work independently by default and collaboratively by design, multi-vendor IPT coordination is exactly that. And the deep foundation is air traffic control: a 64-person watch team through four hundred nine thousand mishap-free operations, which is priority management with consequences attached.",
+ a120:null,maxNote:"Sixty seconds.",
+ followups:["Describe a priority collision between the two roles and the call you made.","What do you drop first under overload?","How do stakeholders learn about a slip?"],
+ terms:["Integrated master schedule","Dependency tracker"],
+ avoid:["Time-management platitudes without the concurrent evidence"],
+ practice:"Name the two concurrent roles and their dates without hesitation.",srcs:["Requirement r25","Resume"]},
+
+{id:"b28",bank:"B",band:"Working style",label:"Explain",q:"Describe your experience with Microsoft Copilot or equivalent AI tools.",
+ testing:"A stated expectation for all hires; also governance maturity.",
+ jd:"\"All hired employees are expected to have experience with Microsoft Copilot and / or an approved equivalent AI solution.\"",
+ evidence:[{t:"Uses Microsoft Copilot daily; has built agents.",tier:"PROD"},{t:"AI4PI credential (ISPI, Mar 2026 to Mar 2027); AI workflow governance, human-AI handoffs in core skills; doctoral focus on HPT and AI.",tier:"PROD"}],
+ structure:"Daily-use fact, the governance layer, the credential.",
+ a30:"I use Microsoft Copilot daily in my current work and have built agents. Beyond use, I hold the AI4PI credential, Artificial Intelligence for Performance Improvement, and my doctoral research sits at exactly this intersection: AI workflow governance, human-AI handoffs, and adoption.",
+ a60:"Daily and structurally. I use Copilot every working day and have built agents into my workflow, so the expectation in the posting is met as a matter of routine. What I would add is the layer most users skip: governance. I hold the AI4PI credential from ISPI, and my doctoral work focuses on human performance technology and AI, which in practice means designing human-AI handoffs, verifying output instead of trusting it, and managing adoption so the tools change work instead of decorating it. Specific agent inventories are not something I have documented, so I describe them live rather than quote numbers.",
+ a120:null,maxNote:"Sixty seconds.",
+ followups:["What do you use Copilot for daily, concretely?","How do you catch AI errors?","What agent would you build first in this role?"],
+ terms:["AI workflow governance","Human-AI handoff"],
+ avoid:["Quoting undocumented agent counts or outcomes"],
+ practice:"Daily-use sentence plus governance sentence, no more.",srcs:["Requirement r26","Resume summary"]},
+
+{id:"b29",bank:"B",band:"Desired",label:"Remember",q:"Do you hold the ServiceNow Certified Application Developer certification?",
+ testing:"Desired-qualification fact check.",
+ jd:"Desired: \"ServiceNow Certified Application Developer certification.\"",
+ evidence:[{t:"No ServiceNow certification held. Documented path: CSA, then CIS-SPM; 21 courses and two paths since July 22, 2026.",tier:"NONE"}],
+ structure:"No, then the documented path, stop.",
+ a30:"No. I hold no ServiceNow certifications. My documented path is CSA first, then CIS-SPM, backed by 21 courses and two learning paths completed since July 22, 2026.",
+ a60:null,a120:null,maxNote:"Thirty seconds; the certification story lives fully in the Bank A module.",
+ followups:["Why CSA before CAD?","Timeline for CSA?"],
+ terms:["CSA","CAD"],
+ avoid:["'In progress' phrased as held"],
+ practice:"One breath.",srcs:["Requirement r27"]},
+
+{id:"b30",bank:"B",band:"Desired",label:"Remember",q:"Do you hold an ITIL certification?",
+ testing:"Desired-qualification fact check; no invented plan.",
+ jd:"Desired: \"ITIL v3 certification.\"",
+ evidence:[{t:"Not held; no documented study plan.",tier:"NONE"}],
+ structure:"No. Do not invent a plan.",
+ a30:"No, I do not hold an ITIL certification, and I will not claim a study plan I have not actually documented. My certification bandwidth right now is committed to Security+ and then CSA.",
+ a60:null,a120:null,maxNote:"Thirty seconds.",
+ followups:["Would you pursue it if we asked?"],
+ terms:["ITIL certification"],
+ avoid:["Inventing an ITIL study plan"],
+ practice:"One breath.",srcs:["Requirement r28"]},
+
+{id:"b31",bank:"B",band:"Desired",label:"Remember",q:"Any Azure or AWS experience?",
+ testing:"Desired-qualification fact check.",
+ jd:"Desired: \"Experience with cloud platforms such as Microsoft Azure or AWS.\"",
+ evidence:[{t:"Not documented.",tier:"NONE"}],
+ structure:"No, one context sentence, stop.",
+ a30:"No documented Azure or AWS experience. My cloud exposure is as a consumer of cloud-hosted platforms, ServiceNow itself being one, not as an infrastructure operator.",
+ a60:null,a120:null,maxNote:"Thirty seconds.",
+ followups:["Does cloud infrastructure interest you?"],
+ terms:[],
+ avoid:["Stretching platform use into cloud operations"],
+ practice:"One breath.",srcs:["Requirement r29"]},
+
+{id:"b32",bank:"B",band:"Desired",label:"Explain",q:"What relational database experience do you have: MySQL, Oracle, SQL Server?",
+ testing:"Desired-qualification accuracy.",
+ jd:"Desired: \"Experience with relational databases such as MySQL, Oracle, or SQL Server.\"",
+ evidence:[{t:"MySQL Workbench and relational database design, academic coursework.",tier:"STUDIED"}],
+ structure:"Tier, tool, content.",
+ a30:"Academic: MySQL through MySQL Workbench in my database coursework, covering relational design, schemas, joins, and normalization. Working knowledge for reading and reasoning about data models, labeled as coursework rather than production DBA experience.",
+ a60:null,a120:null,maxNote:"Thirty seconds; b8 carries the fuller database answer.",
+ followups:["Primary key versus foreign key?","Design a three-table schema for safety issues."],
+ terms:["MySQL Workbench","Schema design"],
+ avoid:["Claiming Oracle or SQL Server exposure"],
+ practice:"One breath.",srcs:["Requirement r30"]},
+
+{id:"b33",bank:"B",band:"Responsibilities",label:"Explain",q:"How would you design and implement a solution for a new feature or integration in ServiceNow?",
+ testing:"Situational judgment: whether your method is real even where production mileage is not.",
+ jd:"Key responsibility: \"Design and implement solutions to support new features, capabilities, and system integrations within ServiceNow.\"",
+ evidence:[{t:"Configure-first design judgment (Q12); PDI build practice: scoped app, flow, security model, update set.",tier:"PDI"},{t:"Requirements-to-delivery translation discipline from program work.",tier:"PROD"}],
+ structure:"Method in five steps, anchored to what you have actually practiced, honest about scale.",
+ a30:"Requirements first: what decision or workflow is this serving, and who owns it. Then configure-first design: out-of-the-box, then declarative, custom only with justification. Build small in a sub-production instance, secure it with roles and ACLs from the start, verify by impersonation, and move it as an update set with documentation.",
+ a60:"My method, which I have practiced at PDI scale. One: requirements, in the users' language, what workflow is being served, who owns it, what does done mean. Two: design under a configure-first rule, out-of-the-box capability, then declarative configuration, custom development only when a documented requirement cannot be met otherwise and the upgrade cost is accepted. Three: build in a non-production instance, scoped so it cannot leak. Four: security is design, not garnish, roles, ACLs, row and field conditions, verified by impersonating each persona before anyone asks. Five: package as an update set, document what and why, and test end to end before activation. That is exactly the shape of my safety-app and flow builds, and I am direct that my mileage is lab-scale while the method is production-shaped.",
+ a120:null,maxNote:"Sixty seconds of method; scale honesty included.",
+ followups:["Where does stakeholder signoff enter?","What would you do differently for an integration versus a feature?","How do you decide scoped versus global?"],
+ terms:["Configure-first","Sub-production instance","Update set"],
+ avoid:["Narrating production implementations you have not done"],
+ practice:"Five steps, five fingers, out loud.",srcs:["Prepared Q12","PDI lab records"]},
+
+{id:"b34",bank:"B",band:"Responsibilities",label:"Explain",q:"How would you approach configuring and maintaining ITSM, ITOM, and ITAM implementations following best practices?",
+ testing:"Whether best practice means something operational to you.",
+ jd:"Key responsibility: \"Configure, enhance, and maintain ServiceNow platform implementations across ITSM, ITOM, and ITAM modules following best practices.\"",
+ evidence:[{t:"Configure-first judgment; update-set and impersonation discipline from PDI practice.",tier:"PDI"},{t:"Module knowledge tiers: ITSM studied, ITOM none, ITAM none, stated plainly.",tier:"STUDIED"}],
+ structure:"Define best practice operationally, then apply, then the module-knowledge boundary.",
+ a30:"Best practice, operationally: preserve out-of-the-box behavior, prefer declarative changes, document every deviation with its justification, move changes through update sets, test with the least-privileged persona, and protect upgradeability above cleverness. I would bring that discipline while being plain that my ITOM and ITAM knowledge is currently thin.",
+ a60:"To me best practices are operational habits, not a poster. Preserve out-of-the-box behavior and prefer declarative configuration, because upgradeability is the asset. Every deviation gets a documented requirement and an owner who accepted its cost. Changes move through update sets between instances, never hand-edits in production. Security is tested as the least-privileged user, not as admin, which is why impersonation testing is in my routine already. And maintenance means watching what upgrades touch and retesting what matters. I will be equally plain about knowledge tiers: ITSM I know from coursework, ITOM and ITAM are currently gaps, so my first weeks there would be deliberate study of the implemented state before I changed anything.",
+ a120:null,maxNote:"Sixty seconds; the honesty about ITOM/ITAM is part of the answer.",
+ followups:["What does an upgrade break most often?","Why are hand-edits in production dangerous?","What would you study first for ITOM?"],
+ terms:["Upgradeability","Update set discipline","Least privilege"],
+ avoid:["Pretending module depth in ITOM or ITAM"],
+ practice:"List the five habits from memory.",srcs:["Prepared Q12","Requirement rows r16 to r18"]},
+
+{id:"b35",bank:"B",band:"Responsibilities",label:"Explain",q:"How would you develop automation solutions across the platform?",
+ testing:"Automation thinking grounded in your actual Flow Designer practice.",
+ jd:"Key responsibility: \"Develop automation and integration solutions across the ServiceNow platform.\"",
+ evidence:[{t:"PDI Flow Designer build: trigger, approval, branching logic, record updates; error-handler and run-as knowledge.",tier:"PDI"},{t:"Process-mapping discipline: current state before automation.",tier:"PROD"}],
+ structure:"Process first, then the build pattern you have practiced, then guardrails.",
+ a30:"Process before platform: map the current state and find the step where automation removes real toil. Then the pattern I have practiced: a precise trigger, actions with explicit conditions, branching for the exception path, and an error handler so failure is visible. Run flows with least privilege, test in sub-production, activate deliberately.",
+ a60:"I start where my program-improvement work always starts: the process, mapped as it actually runs, because automating a broken process just makes it fail faster. Then the build, in the pattern I have hands-on practice with: a precisely conditioned trigger, so the flow fires on the right records and nothing else; actions doing the work; flow logic carrying the exception path explicitly, my PDI flow branches If approved and Else with distinct record updates, because the rejection path deserves design too; and an error handler so failures surface instead of vanishing. Guardrails: run-as with least privilege, test against a real record in sub-production, and activate only after the end-to-end works, which for my own flow is the documented next step, and I say that rather than round it up.",
+ a120:null,maxNote:"Sixty seconds, anchored to the practiced pattern.",
+ followups:["When is Flow Designer the wrong tool?","How do you stop a runaway flow?","What belongs in a subflow?"],
+ terms:["Trigger condition","Exception path","Least privilege"],
+ avoid:["Rounding the draft flow up to activated","Claiming production automation"],
+ practice:"Say the pattern: trigger, action, branch, error handler, guardrails.",srcs:["PDI Flow Designer lab record","Resume CIWT bullets"]},
+
+{id:"b36",bank:"B",band:"Responsibilities",label:"Defend",q:"How do you align improvements with mission requirements and collaborate in a secure, mission-driven environment?",
+ testing:"The two closing responsibilities together: mission alignment and cleared-environment collaboration.",
+ jd:"Key responsibilities: \"Support ongoing system improvements aligned with mission and customer requirements\" and \"Collaborate with stakeholders to ensure effective delivery of technical solutions in a secure, mission-driven environment.\"",
+ evidence:[{t:"Stakeholder requirements translation, government-furnished baselines, acceptance criteria alignment across 12-24 month periods.",tier:"PROD"},{t:"Security-embedded delivery: DD Form 254, security-support workstream, Top Secret clearance, 20+ years in classified environments.",tier:"PROD"}],
+ structure:"Mission alignment mechanism, then security as habit, one evidence line each.",
+ a30:"Mission alignment is traceability: every improvement traces to a stakeholder requirement, a baseline, and acceptance criteria, or it does not happen. And secure collaboration is my native environment: twenty-plus years cleared, DD Form 254 requirements handled inside delivery rather than around it, currently under an active Top Secret.",
+ a60:"Alignment, for me, is a traceability habit: an improvement earns its place by tracing to a stakeholder requirement, a government-furnished baseline, and named acceptance criteria, which is how I have run 12-to-24-month periods of performance without drift. The customer's mission owns the priority stack; my reporting exists so they can see that it does. On the secure environment: that is not an adjustment for me, it is home. Twenty-plus years in cleared DoD settings, an active Top Secret, Derivative Classification current, and on TDL-064 the security-support workstream and DD Form 254 requirements ran inside the delivery plan, not as an afterthought. Collaboration in that world means precision about what moves where, and I am built for it.",
+ a120:null,maxNote:"Sixty seconds.",
+ followups:["Give an example of killing an improvement that did not trace to mission.","How do you collaborate when half the room lacks the clearance context?","What changes about delivery inside classification boundaries?"],
+ terms:["Traceability","Government-furnished baseline","DD Form 254"],
+ avoid:["Mission platitudes without the mechanism"],
+ practice:"Say the traceability sentence and the native-environment sentence back to back.",srcs:["Resume CIWT and TDL-064 bullets"]}
+];
+const BANKB = BANKB1.concat(BANKB2);
+const ALLQ = BANKA.concat(BANKB);
+
+/* ================= APP LOGIC ================= */
+const LSKEY = META.storageKey;
+function loadS(){ try{ return JSON.parse(localStorage.getItem(LSKEY))||{} }catch(e){ return {} } }
+let S = Object.assign({conf:{},mast:{},ok:{},mockHist:[],done:{},cardSel:{},diagDone:false},loadS());
+function save(){ try{ localStorage.setItem(LSKEY,JSON.stringify(S)) }catch(e){} }
+function esc(s){ return String(s==null?"":s).replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;").replace(/"/g,"&quot;") }
+const byId = {}; ALLQ.forEach(q=>byId[q.id]=q); DEFENSE.forEach(d=>byId[d.id]=d); REQS.forEach(r=>byId[r.id]=r);
+const stack = [];
+let view = "path", curId = null, qtab = "A", evtab = "table", mock = null;
+
+function tierChip(t){ return '<span class="chip sm tier-'+esc(t)+'">'+esc(t)+'</span>' }
+function tiersOf(x){ return (x.evidence?x.evidence.map(e=>e.tier):(x.tiers||[])).filter((v,i,a)=>a.indexOf(v)===i) }
+function prov(kind){ if(kind==="S")return '<span class="prov S">SOURCED</span>'; if(kind==="C")return '<span class="prov C">DRAFT &middot; CONFIRMED BY YOU</span>'; return '<span class="prov D">DRAFT</span>' }
+function statusChip(st){ const cls = st.indexOf("NOT")===0?"st-NOTMET":(st==="EXCEEDS"?"st-EXCEEDS":(st==="PARTIAL"?"st-PARTIAL":"")); if(cls)return '<span class="chip sm '+cls+'">'+esc(st)+'</span>'; return (st.split(" / ").map(t=>TIERS[t]?tierChip(t):'<span class="chip sm">'+esc(st)+'</span>')).join("") }
+function riskOf(x){ const t=tiersOf(x); if(t.indexOf("NONE")>=0)return "HIGH"; if(t.indexOf("PROD")>=0)return "LOW"; return "MEDIUM" }
+function rateRow(map,id,label){ const v=S[map][id]||0; let h='<div class="row" style="margin-top:6px"><span class="pill">'+label+'</span><div class="rate" role="group" aria-label="'+label+' 1 to 5">';
+ for(let i=1;i<=5;i++){ h+='<button class="chip" aria-pressed="'+(v===i)+'" onclick="setRate(\''+map+'\',\''+id+'\','+i+')">'+i+'</button>' }
+ return h+'</div></div>' }
+function setRate(map,id,v){ S[map][id]=(S[map][id]===v?0:v); save(); render() }
+function toggleOk(key){ S.ok[key]=!S.ok[key]; save(); render() }
+function toggleDone(id){ S.done[id]=!S.done[id]; save(); render() }
+function toggleCard(key){ S.cardSel[key]=!S.cardSel[key]; save(); render() }
+
+function go(v,id,tab){ stack.push({view:view,curId:curId,qtab:qtab,evtab:evtab}); view=v; curId=id||null; if(tab)qtab=tab; window.scrollTo(0,0); render() }
+function goBack(){ const p=stack.pop(); if(p){ view=p.view; curId=p.curId; qtab=p.qtab; evtab=p.evtab } else { view="path"; curId=null } render() }
+function setQtab(t){ qtab=t; render() }
+function setEvtab(t){ evtab=t; render() }
+
+/* ---------- Visual builders (inline SVG / CSS) ---------- */
+function svgChron(){ return '<div class="svgwrap"><svg viewBox="0 0 720 190" role="img" aria-label="ServiceNow chronology timeline">'
+ +'<line x1="20" y1="95" x2="700" y2="95" stroke="#27304f" stroke-width="2"/>'
+ +'<rect x="20" y="20" width="680" height="34" rx="8" fill="#3b3220" stroke="#ffb454"/><text x="30" y="42" fill="#ffb454" font-size="14" font-weight="700">STUDIED: independent learning, own profile (from July 2025)</text>'
+ +'<rect x="120" y="78" width="420" height="34" rx="8" fill="#132b22" stroke="#38d39f"/><text x="130" y="100" fill="#38d39f" font-size="14" font-weight="700">PROD: TDL-064 use (Aug 2025; intensive to May 2026)</text>'
+ +'<rect x="540" y="78" width="160" height="34" rx="8" fill="#132b22" stroke="#38d39f" stroke-dasharray="5 4"/><text x="550" y="100" fill="#38d39f" font-size="13">monitoring and reporting</text>'
+ +'<rect x="470" y="136" width="230" height="34" rx="8" fill="#1d2b4d" stroke="#5b8cff"/><text x="480" y="158" fill="#5b8cff" font-size="14" font-weight="700">STUDIED + PDI (from July 22, 2026)</text>'
+ +'<text x="20" y="185" fill="#98a2c8" font-size="12">Jul 2025</text><text x="120" y="75" fill="#98a2c8" font-size="12">Aug 2025</text><text x="470" y="132" fill="#98a2c8" font-size="12">Jul 22, 2026</text>'
+ +'</svg><div class="cap">Three evidence categories, visually separate: independent study (top), production use (middle), structured University and PDI record (bottom). They are never one number.</div></div>' }
+function svgChain(){ return '<div class="svgwrap"><svg viewBox="0 0 720 240" role="img" aria-label="TDL-064 delivery chain showing where ServiceNow sat">'
+ +'<rect x="10" y="20" width="200" height="70" rx="10" fill="#1b2240" stroke="#27304f"/><text x="20" y="45" fill="#e8ecf8" font-size="13" font-weight="700">Contract workstreams</text><text x="20" y="63" fill="#98a2c8" font-size="11">mission planning, ATAK, HITL,</text><text x="20" y="78" fill="#98a2c8" font-size="11">AAR, security, logistics</text>'
+ +'<rect x="260" y="10" width="240" height="120" rx="10" fill="#1d2b4d" stroke="#5b8cff" stroke-width="2"/><text x="272" y="34" fill="#5b8cff" font-size="13" font-weight="800">ServiceNow (my lane, PROD)</text><text x="272" y="54" fill="#e8ecf8" font-size="11">milestones + WBS + planned dates</text><text x="272" y="70" fill="#e8ecf8" font-size="11">dashboards, KPIs, drill-down</text><text x="272" y="86" fill="#e8ecf8" font-size="11">reporting, filters, one shared page</text><text x="272" y="102" fill="#e8ecf8" font-size="11">change/release coordination</text><text x="272" y="120" fill="#98a2c8" font-size="10">non-administrator, limited config authority</text>'
+ +'<rect x="550" y="30" width="160" height="80" rx="10" fill="#1b2240" stroke="#27304f"/><text x="560" y="55" fill="#e8ecf8" font-size="13" font-weight="700">Decisions</text><text x="560" y="73" fill="#98a2c8" font-size="11">sequencing, funding,</text><text x="560" y="88" fill="#98a2c8" font-size="11">risk mitigation COAs</text>'
+ +'<rect x="260" y="160" width="240" height="60" rx="10" fill="#151b32" stroke="#ff6b6b" stroke-dasharray="6 4"/><text x="272" y="184" fill="#ff6b6b" font-size="12" font-weight="700">Integrations and flow logic</text><text x="272" y="202" fill="#98a2c8" font-size="11">fed the records; NOT mine</text>'
+ +'<line x1="210" y1="60" x2="258" y2="60" stroke="#5b8cff" stroke-width="2"/><polygon points="258,60 248,55 248,65" fill="#5b8cff"/>'
+ +'<line x1="500" y1="65" x2="548" y2="65" stroke="#5b8cff" stroke-width="2"/><polygon points="548,65 538,60 538,70" fill="#5b8cff"/>'
+ +'<line x1="380" y1="160" x2="380" y2="132" stroke="#ff6b6b" stroke-width="2" stroke-dasharray="5 4"/><polygon points="380,132 375,142 385,142" fill="#ff6b6b"/>'
+ +'</svg><div class="cap">Where ServiceNow sat in the TDL-064 workflow. Solid lane: mine, production. Dashed box: the integrations and flows feeding the records, which were not mine, and I say so.</div></div>' }
+function svgTree(){ return '<div class="svgwrap"><svg viewBox="0 0 720 300" role="img" aria-label="Configure versus customize versus custom develop decision tree">'
+ +'<rect x="250" y="8" width="220" height="44" rx="10" fill="#1b2240" stroke="#27304f"/><text x="360" y="35" fill="#e8ecf8" font-size="13" text-anchor="middle" font-weight="700">Does out-of-the-box meet it?</text>'
+ +'<rect x="40" y="90" width="180" height="40" rx="10" fill="#132b22" stroke="#38d39f"/><text x="130" y="115" fill="#38d39f" font-size="13" text-anchor="middle" font-weight="700">Yes: use it as-is</text>'
+ +'<rect x="270" y="90" width="180" height="44" rx="10" fill="#1b2240" stroke="#27304f"/><text x="360" y="112" fill="#e8ecf8" font-size="12.5" text-anchor="middle" font-weight="700">Can declarative config</text><text x="360" y="127" fill="#e8ecf8" font-size="12.5" text-anchor="middle" font-weight="700">meet it?</text>'
+ +'<rect x="500" y="90" width="200" height="40" rx="10" fill="#1d2b4d" stroke="#5b8cff"/><text x="600" y="115" fill="#5b8cff" font-size="13" text-anchor="middle" font-weight="700">Yes: configure</text>'
+ +'<rect x="250" y="170" width="220" height="56" rx="10" fill="#1b2240" stroke="#27304f"/><text x="360" y="192" fill="#e8ecf8" font-size="12" text-anchor="middle" font-weight="700">Documented requirement AND</text><text x="360" y="208" fill="#e8ecf8" font-size="12" text-anchor="middle" font-weight="700">owner accepts upgrade cost?</text>'
+ +'<rect x="60" y="250" width="260" height="42" rx="10" fill="#3b3220" stroke="#ffb454"/><text x="190" y="268" fill="#ffb454" font-size="12" text-anchor="middle" font-weight="700">Yes: customize narrowly</text><text x="190" y="284" fill="#ffb454" font-size="11" text-anchor="middle">scoped, documented, tested at upgrade</text>'
+ +'<rect x="400" y="250" width="260" height="42" rx="10" fill="#3a1a24" stroke="#ff6b6b"/><text x="530" y="268" fill="#ff6b6b" font-size="12" text-anchor="middle" font-weight="700">No: do not build it</text><text x="530" y="284" fill="#98a2c8" font-size="11" text-anchor="middle">or scope net-new app with governance</text>'
+ +'<line x1="300" y1="52" x2="150" y2="88" stroke="#38d39f" stroke-width="2"/><line x1="360" y1="52" x2="360" y2="88" stroke="#27304f" stroke-width="2"/><line x1="450" y1="112" x2="498" y2="110" stroke="#5b8cff" stroke-width="2"/><line x1="360" y1="134" x2="360" y2="168" stroke="#27304f" stroke-width="2"/><line x1="300" y1="226" x2="200" y2="248" stroke="#ffb454" stroke-width="2"/><line x1="420" y1="226" x2="520" y2="248" stroke="#ff6b6b" stroke-width="2"/>'
+ +'</svg><div class="cap">The upgradeability-first sequence: out-of-the-box, then declarative configuration, then justified customization, and an explicit stop when justification is missing.</div></div>' }
+function svgArch(){ return '<div class="svgwrap"><svg viewBox="0 0 720 330" role="img" aria-label="App Engine Studio safety application architecture">'
+ +'<rect x="10" y="10" width="700" height="270" rx="12" fill="none" stroke="#5b8cff" stroke-width="2"/><text x="24" y="34" fill="#5b8cff" font-size="13" font-weight="800">Scoped app (PDI, Zurich): safety issue tracking</text>'
+ +'<rect x="30" y="50" width="240" height="52" rx="10" fill="#1b2240" stroke="#27304f"/><text x="42" y="72" fill="#e8ecf8" font-size="13" font-weight="700">Custom table: Safety Issue</text><text x="42" y="90" fill="#98a2c8" font-size="11">assigned-to reference field</text>'
+ +'<rect x="30" y="120" width="112" height="44" rx="10" fill="#1d2b4d" stroke="#5b8cff"/><text x="86" y="139" fill="#e8ecf8" font-size="12" text-anchor="middle" font-weight="700">Role: user</text><text x="86" y="155" fill="#98a2c8" font-size="10" text-anchor="middle">via Agents group</text>'
+ +'<rect x="158" y="120" width="112" height="44" rx="10" fill="#1d2b4d" stroke="#5b8cff"/><text x="214" y="139" fill="#e8ecf8" font-size="12" text-anchor="middle" font-weight="700">Role: admin</text><text x="214" y="155" fill="#98a2c8" font-size="10" text-anchor="middle">via Managers group</text>'
+ +'<rect x="300" y="50" width="390" height="150" rx="10" fill="#151b32" stroke="#27304f"/><text x="314" y="72" fill="#e8ecf8" font-size="13" font-weight="800">Seven ACLs (the doormen)</text>'
+ +'<text x="314" y="94" fill="#38d39f" font-size="11.5">read (agent): requires user role + condition Assigned-to is (dynamic) Me</text>'
+ +'<text x="314" y="112" fill="#38d39f" font-size="11.5">read (manager): requires admin role + EMPTY condition = sees all rows</text>'
+ +'<text x="314" y="130" fill="#ffb454" font-size="11.5">field read: Manager Notes hidden from agents</text>'
+ +'<text x="314" y="148" fill="#ff6b6b" font-size="11.5">delete: manager role only</text>'
+ +'<text x="314" y="166" fill="#98a2c8" font-size="11.5">plus write/create rules completing the seven</text>'
+ +'<text x="314" y="190" fill="#98a2c8" font-size="10.5">any matching read rule grants access: that is why the pair works</text>'
+ +'<rect x="30" y="210" width="240" height="52" rx="10" fill="#132b22" stroke="#38d39f"/><text x="42" y="232" fill="#38d39f" font-size="12.5" font-weight="700">Verified by impersonation</text><text x="42" y="250" fill="#98a2c8" font-size="10.5">agent sees own rows only; manager sees all</text>'
+ +'<rect x="300" y="210" width="390" height="52" rx="10" fill="#1b2240" stroke="#27304f"/><text x="314" y="232" fill="#e8ecf8" font-size="12.5" font-weight="700">Packaged: importable update set</text><text x="314" y="250" fill="#98a2c8" font-size="10.5">public: GitHub.com/dustinford02/servicenow-safety-app</text>'
+ +'<text x="24" y="305" fill="#98a2c8" font-size="11">PDI lab work, not a production deployment. Say that plainly.</text>'
+ +'</svg><div class="cap">The safety app security model: know this well enough to draw it from memory on a whiteboard.</div></div>' }
+function cmpReportPA(){ return '<div class="svgwrap"><div class="grid2">'
+ +'<div><h3 style="color:var(--ok)">Report (what I built)</h3><ul><li>Live query on current data</li><li>Shows NOW</li><li>KPIs, filters, drill-down</li><li>No stored history needed</li></ul></div>'
+ +'<div><h3 style="color:var(--warn)">PA Indicator (not used)</h3><ul><li>Scheduled collection jobs</li><li>Shows TREND over time</li><li>Indicators, sources, breakdowns</li><li>Scored snapshots accumulate</li></ul></div>'
+ +'</div><div class="cap">The Q9 distinction in one view: reports show now; Performance Analytics shows trend. The answer to Q9 is no, delivered with this distinction.</div></div>' }
+
+/* ---------- Renderers ---------- */
+function render(){
+ document.querySelectorAll(".navb").forEach(b=>{ if(b.dataset.v===view)b.setAttribute("aria-current","page"); else b.removeAttribute("aria-current") });
+ document.getElementById("backbtn").classList.toggle("hide", stack.length===0);
+ const m=document.getElementById("m");
+ if(view==="path")m.innerHTML=rPath();
+ else if(view==="questions")m.innerHTML=(curId?rDetail(curId):rQList());
+ else if(view==="evidence")m.innerHTML=(curId?rDetail(curId):rEvidence());
+ else if(view==="mock")m.innerHTML=rMock();
+ else if(view==="review")m.innerHTML=rReview();
+ else if(view==="diag")m.innerHTML=rDiag();
+ else if(view==="search")m.innerHTML=rSearch();
+ if(view==="search"){ const i=document.getElementById("sq"); if(i){ i.focus(); i.value=lastQuery; if(lastQuery)doSearch(lastQuery) } }
+}
+function confCount(){ return Object.keys(S.conf).filter(k=>S.conf[k]>0).length }
+function blockAvg(b){ const vs=b.items.map(i=>S.conf[i]||0).filter(v=>v>0); return vs.length?vs.reduce((a,c)=>a+c,0)/vs.length:0 }
+function weakestBlock(){ let w=null,wv=9; PATH.forEach(b=>{ if(b.items.length){ const a=blockAvg(b)||9; if(a<wv){wv=a;w=b} } }); return w }
+function rPath(){
+ const total=PATH.reduce((a,b)=>a+b.min,0); const doneMin=PATH.filter(b=>S.done[b.id]).reduce((a,b)=>a+b.min,0);
+ let h='<p class="note">'+esc(META.purpose)+'</p>';
+ h+='<div class="card pad"><div class="lbl">The three-date chronology '+prov("S")+'</div>'+svgChron()+'</div>';
+ h+='<div class="card pad"><div class="lbl">One-day path: about nine hours including breaks</div><div class="bar" aria-label="Path progress"><i style="width:'+Math.round(doneMin/total*100)+'%"></i></div><div class="cap">'+doneMin+' of '+total+' minutes marked complete. This bar is the path timeline visual: preparation progress only.</div></div>';
+ h+='<div class="card">';
+ PATH.forEach(b=>{
+  const avg=blockAvg(b); let adapt="";
+  if(!b.brk&&b.items.length&&avg>=4){ const w=weakestBlock(); adapt='<div class="okbox">Diagnostic shows strength here (avg confidence '+avg.toFixed(1)+'). Suggested reallocation: compress toward '+Math.max(10,Math.round(b.min/2))+' min and give the difference to "'+esc(w?w.title:"your weakest block")+'". The plan changed because your ratings say it should.</div>' }
+  h+='<div class="pathblock'+(S.done[b.id]?" done":"")+'"><div class="min">'+b.min+"m"+'</div><div style="flex:1"><h3>'+esc(b.title)+(b.brk?' <span class="chip sm">enforced break</span>':"")+'</h3><div class="txt" style="font-size:13px;color:var(--mut)">'+esc(b.desc)+'</div>';
+  if(b.id==="p1")h+='<div class="row" style="margin-top:8px"><button class="btn acc" onclick="go(\'diag\')">Open diagnostic ('+confCount()+' rated)</button></div>';
+  if(b.id==="p10"||b.id==="p12")h+='<div class="row" style="margin-top:8px"><button class="btn acc" onclick="go(\'mock\')">Open mock interview</button></div>';
+  if(b.id==="p11")h+=rWeakLinks();
+  if(b.id==="p13")h+='<div class="row" style="margin-top:8px"><button class="btn" onclick="go(\'review\')">Open Review to build your card</button></div>';
+  if(b.brk)h+='<div class="row" style="margin-top:8px"><button class="btn" onclick="startBreak(this,'+b.min+')">Start '+b.min+'-minute break timer</button></div>';
+  if(b.items.length)h+='<div class="row" style="margin-top:8px">'+b.items.map(i=>'<button class="chip" onclick="go(\'questions\',\''+i+'\')">'+i.toUpperCase()+'</button>').join("")+'</div>';
+  h+=adapt+'</div><div><button class="chip" aria-pressed="'+!!S.done[b.id]+'" onclick="toggleDone(\''+b.id+'\')">'+(S.done[b.id]?"done":"mark done")+'</button></div></div>';
+ });
+ h+='</div>';
+ h+='<div class="card pad"><div class="lbl">Flagged item</div><div class="txt" style="font-size:13px">'+esc(META.flagged)+'</div></div>';
+ return h;
+}
+function rWeakLinks(){ const weak=lastWeakItems(); if(!weak.length)return '<div class="cap" style="margin-top:6px">Weak items appear here after Mock 1 is scored.</div>';
+ return '<div class="row" style="margin-top:8px">'+weak.map(i=>'<button class="chip tier-NONE" onclick="go(\'questions\',\''+i+'\')">'+i.toUpperCase()+'</button>').join("")+'</div>' }
+function lastWeakItems(){ const h=S.mockHist[S.mockHist.length-1]; if(!h)return []; return h.items.filter(it=>Object.values(it.scores||{}).some(v=>v>0&&v<=2)).map(it=>it.id) }
+function startBreak(btn,min){ let s=min*60; btn.disabled=true; const t=setInterval(()=>{ s--; btn.textContent=Math.floor(s/60)+":"+String(s%60).padStart(2,"0")+" remaining"; if(s<=0){ clearInterval(t); btn.textContent="Break complete"; } },1000) }
+
+function rQList(){
+ let h='<div class="row" role="tablist" style="margin-bottom:12px">'
+ +'<button class="btn'+(qtab==="A"?" acc":"")+'" role="tab" aria-selected="'+(qtab==="A")+'" onclick="setQtab(\'A\')">Bank A: SPM (15)</button>'
+ +'<button class="btn'+(qtab==="B"?" acc":"")+'" role="tab" aria-selected="'+(qtab==="B")+'" onclick="setQtab(\'B\')">Bank B: JD ('+BANKB.length+')</button>'
+ +'<button class="btn'+(qtab==="D"?" acc":"")+'" role="tab" aria-selected="'+(qtab==="D")+'" onclick="setQtab(\'D\')">Resume defense ('+DEFENSE.length+')</button></div>';
+ if(qtab==="D"){ h+='<p class="note">One module per material resume claim: the exact claim, its true boundary, and the skeptical follow-ups.</p><div class="card">';
+  DEFENSE.forEach(d=>{ h+='<button class="qh" onclick="go(\'questions\',\''+d.id+'\')"><span class="num">'+d.id.toUpperCase()+'</span><span style="flex:1"><span class="qt">'+esc(d.claim.length>110?d.claim.slice(0,110)+"...":d.claim)+'</span><span class="meta">'+tierChip(d.tier)+(d.id==="d4"?'<span class="chip sm tier-NONE">highest fidelity risk</span>':"")+'</span></span></button>' });
+  return h+'</div>' }
+ const list=qtab==="A"?BANKA:BANKB;
+ h+='<p class="note">'+(qtab==="A"?"Your 15 anticipated SPM questions with documented answers and boundaries.":"Generated from the job description: every required and desired qualification and every key responsibility, each tagged to its JD line.")+'</p><div class="card">';
+ let band="";
+ list.forEach(q=>{ if(q.band!==band){ band=q.band; h+='<div class="pad" style="padding:10px 14px 2px"><span class="lbl">'+esc(band)+'</span></div>' }
+  h+='<button class="qh" aria-label="Open '+q.id+'" onclick="go(\'questions\',\''+q.id+'\')"><span class="num">'+q.id.toUpperCase()+'</span><span style="flex:1"><span class="qt">'+esc(q.q)+'</span><span class="meta">'+tiersOf(q).map(tierChip).join("")+'<span class="chip sm">'+esc(q.label)+'</span>'+(S.conf[q.id]?'<span class="chip sm">conf '+S.conf[q.id]+'</span>':"")+'</span></span></button>' });
+ return h+'</div>'
+}
+function answerBlock(q,key,label,text){
+ if(!text)return "";
+ const okKey=q.id+"|"+key, conf=!!S.ok[okKey];
+ return '<div class="answer"><div class="ahead"><strong>'+label+'</strong><span class="row">'+prov(conf?"C":"D")+'<button class="chip" aria-pressed="'+conf+'" onclick="toggleOk(\''+okKey+'\')">'+(conf?"unconfirm":"confirm as mine")+'</button></span></div>'+esc(text)+'</div>'
+}
+function rDetail(id){
+ const x=byId[id]; if(!x)return '<p class="note">Not found.</p>';
+ if(x.claim)return rDefense(x);
+ if(x.req)return rReqDetail(x);
+ const q=x; let h='<div class="card pad">';
+ h+='<div class="row"><span class="num">'+q.id.toUpperCase()+'</span><span class="chip sm">Bank '+q.bank+'</span><span class="chip sm">'+esc(q.band)+'</span><span class="chip sm">Goal: '+esc(q.label)+'</span>'+tiersOf(q).map(tierChip).join("")+'</div>';
+ h+='<h2 style="margin:10px 0 4px">'+esc(q.q)+'</h2>';
+ h+=rateRow("conf",q.id,"Confidence")+rateRow("mast",q.id,"Mastery");
+ h+='<div class="sec"><div class="lbl">What the interviewer is testing '+prov("D")+'</div><div class="txt">'+esc(q.testing)+'</div></div>';
+ h+='<div class="sec"><div class="lbl">Job-description language '+prov("S")+'</div><div class="txt">'+esc(q.jd)+'</div></div>';
+ h+='<div class="sec"><div class="lbl">Strongest truthful evidence '+prov("S")+'</div><ul>'+q.evidence.map(e=>'<li>'+tierChip(e.tier)+" "+esc(e.t)+'</li>').join("")+'</ul></div>';
+ h+='<div class="sec"><div class="lbl">Response structure '+prov("D")+'</div><div class="txt">'+esc(q.structure)+'</div></div>';
+ h+='<div class="sec"><div class="lbl">Spoken answers (confirm each before you rehearse it as yours)</div>';
+ h+=answerBlock(q,"a30","~30 seconds",q.a30)+answerBlock(q,"a60","~60 seconds",q.a60)+answerBlock(q,"a120","~120 seconds",q.a120);
+ if(!q.a120&&q.maxNote)h+='<div class="warnbox"><strong>Shorter maximum:</strong> '+esc(q.maxNote)+'</div>';
+ h+='</div>';
+ h+='<div class="sec"><div class="lbl">Likely follow-ups and challenges '+prov("D")+'</div><ul>'+q.followups.map(f=>'<li>'+esc(f)+'</li>').join("")+'</ul></div>';
+ if(q.terms.length)h+='<div class="sec"><div class="lbl">Terms to hold the answer up</div><div class="row">'+q.terms.map(t=>'<span class="chip">'+esc(t)+'</span>').join("")+'</div></div>';
+ h+='<div class="warnbox"><strong>Do not say:</strong><ul>'+q.avoid.map(a=>'<li>'+esc(a)+'</li>').join("")+'</ul></div>';
+ h+='<div class="okbox"><strong>Spoken practice:</strong> '+esc(q.practice)+'</div>';
+ h+='<div class="sec"><div class="lbl">Self-evaluation rubric '+prov("D")+'</div><ul><li>Accurate to the corpus, nothing invented</li><li>Evidence stated at its correct tier</li><li>Boundary stated only where the question implicates it</li><li>Concise for the target time</li><li>Sounds like me when spoken aloud</li></ul></div>';
+ h+='<div class="sec"><div class="lbl">Sources '+prov("S")+'</div><div class="row">'+q.srcs.map(s=>'<span class="chip sm">'+esc(s)+'</span>').join("")+'</div></div>';
+ if(q.id==="a9")h+=cmpReportPA();
+ if(q.id==="a12")h+=svgTree();
+ if(q.id==="b15")h+=svgArch();
+ if(q.id==="a1")h+=svgChron();
+ return h+'</div>'
+}
+function rDefense(d){
+ let h='<div class="card pad"><div class="row"><span class="num">'+d.id.toUpperCase()+'</span>'+tierChip(d.tier)+(d.id==="d4"?'<span class="chip sm tier-NONE">highest fidelity risk</span>':"")+'</div>';
+ h+='<div class="sec"><div class="lbl">Exact claim '+prov("S")+'</div><div class="txt">'+esc(d.claim)+'</div></div>';
+ h+=rateRow("conf",d.id,"Confidence");
+ [["Supporting evidence",d.evidence,"S"],["Situation and context",d.context,"S"],["My actual role and authority",d.role,"S"],["Tools, methods, stakeholders",d.tools,"S"],["Results, where supported",d.results,"S"],["Boundary: what I did and did not do",d.boundary,"S"]].forEach(p=>{ h+='<div class="sec"><div class="lbl">'+p[0]+" "+prov(p[2])+'</div><div class="txt">'+esc(p[1])+'</div></div>' });
+ h+='<div class="sec"><div class="lbl">Skeptical follow-ups '+prov("D")+'</div><ul>'+d.followups.map(f=>'<li>'+esc(f)+'</li>').join("")+'</ul></div>';
+ h+=answerBlock(d,"def","Truthful defense (spoken)",d.defense);
+ h+='<div class="warnbox"><strong>Documentation gap:</strong> '+esc(d.gap)+'</div>';
+ if(d.id==="d3")h+=svgArch();
+ if(d.id==="d2")h+=svgChain();
+ return h+'</div>'
+}
+function rReqDetail(r){
+ let h='<div class="card pad"><div class="row"><span class="num">'+r.id.toUpperCase()+'</span>'+statusChip(r.status)+r.tiers.map(tierChip).join("")+'</div>';
+ h+='<h2 style="margin:10px 0 4px">'+esc(r.req)+'</h2>';
+ h+='<div class="sec"><div class="lbl">Job-description line '+prov("S")+'</div><div class="txt">'+esc(r.jd)+'</div></div>';
+ h+='<div class="sec"><div class="lbl">What the corpus documents '+prov("S")+'</div><div class="txt">'+esc(r.notes)+'</div></div>';
+ if(r.resp)h+='<div class="sec"><div class="lbl">Prepared direct response (use when asked, or when the distinction is materially necessary)</div>'+answerBlock(r,"resp","Spoken response",r.resp)+'</div>';
+ h+=rateRow("conf",r.id,"Confidence");
+ if(r.qref&&byId[r.qref])h+='<div class="row" style="margin-top:10px"><button class="btn" onclick="go(\'questions\',\''+r.qref+'\')">Open full question module '+r.qref.toUpperCase()+'</button></div>';
+ return h+'</div>'
+}
+let evFilter="ALL";
+function setEvFilter(f){ evFilter=f; render() }
+function rEvidence(){
+ let h='<div class="row" role="tablist" style="margin-bottom:12px">'
+ +'<button class="btn'+(evtab==="table"?" acc":"")+'" onclick="setEvtab(\'table\')">Requirement table</button>'
+ +'<button class="btn'+(evtab==="map"?" acc":"")+'" onclick="setEvtab(\'map\')">Coverage map</button>'
+ +'<button class="btn'+(evtab==="vis"?" acc":"")+'" onclick="setEvtab(\'vis\')">Visuals</button></div>';
+ if(evtab==="table"){
+  h+='<p class="note">The evidence-tier map: what the corpus documents against each stated requirement. Requirement-level classifications only; nothing here rolls up into any overall figure.</p>';
+  const fs=["ALL","PROD","PDI","TRANSFER","STUDIED","NONE"];
+  h+='<div class="row" style="margin-bottom:10px">'+fs.map(f=>'<button class="chip'+(evFilter===f?" tier-PDI":"")+'" aria-pressed="'+(evFilter===f)+'" onclick="setEvFilter(\''+f+'\')">'+f+'</button>').join("")+'</div><div class="card">';
+  REQS.filter(r=>evFilter==="ALL"||r.tiers.indexOf(evFilter)>=0).forEach(r=>{
+   h+='<button class="qh" onclick="go(\'evidence\',\''+r.id+'\')"><span style="flex:1"><span class="qt">'+esc(r.req)+'</span><span class="meta">'+statusChip(r.status)+r.tiers.map(tierChip).join("")+(r.resp?'<span class="chip sm">prepared response</span>':"")+'</span></span></button>';
+  });
+  h+='</div>';
+ } else if(evtab==="map"){
+  h+='<p class="note">Readiness here means readiness to answer a specific topic, never anything more. Filter by evidence-fidelity risk.</p>';
+  const rs=["ALL","HIGH","MEDIUM","LOW"];
+  h+='<div class="row" style="margin-bottom:10px">'+rs.map(f=>'<button class="chip'+(evFilter===f?" tier-PDI":"")+'" aria-pressed="'+(evFilter===f)+'" onclick="setEvFilter(\''+f+'\')">'+f+'</button>').join("")+'</div><div class="card">';
+  ALLQ.filter(q=>evFilter==="ALL"||["HIGH","MEDIUM","LOW"].indexOf(evFilter)<0||riskOf(q)===evFilter).forEach(q=>{
+   const status=(S.conf[q.id]?"conf "+S.conf[q.id]:"unrated")+(S.ok[q.id+"|a60"]?", confirmed":"");
+   h+='<button class="qh" onclick="go(\'questions\',\''+q.id+'\')"><span class="num">'+q.id.toUpperCase()+'</span><span style="flex:1"><span class="qt">'+esc(q.q)+'</span><span class="meta">'+tiersOf(q).map(tierChip).join("")+'<span class="chip sm">fidelity risk: '+riskOf(q)+'</span><span class="chip sm">'+esc(status)+'</span></span></span></button>';
+  });
+  h+='</div>';
+ } else {
+  h+='<div class="card pad"><div class="lbl">Chronology</div>'+svgChron()+'</div>';
+  h+='<div class="card pad"><div class="lbl">TDL-064 delivery chain</div>'+svgChain()+'</div>';
+  h+='<div class="card pad"><div class="lbl">Report vs Performance Analytics</div>'+cmpReportPA()+'</div>';
+  h+='<div class="card pad"><div class="lbl">Configure / customize / custom develop</div>'+svgTree()+'</div>';
+  h+='<div class="card pad"><div class="lbl">Safety app architecture</div>'+svgArch()+'</div>';
+ }
+ return h;
+}
+/* ---------- Diagnostic ---------- */
+function rDiag(){
+ let h='<p class="note">Rate confidence 1 to 5 on every item. Low ratings and NONE or NOT MET requirements drive the priority order. Ratings persist.</p>';
+ h+='<div class="card pad"><div class="lbl">Progress</div><div class="bar"><i style="width:'+Math.round(confCount()/(ALLQ.length+REQS.length)*100)+'%"></i></div><div class="cap">'+confCount()+' of '+(ALLQ.length+REQS.length)+' items rated.</div></div>';
+ h+='<h2>Questions</h2><div class="card pad">';
+ ALLQ.forEach(q=>{ h+='<div style="border-bottom:1px solid var(--bd);padding:8px 0"><div class="txt" style="font-size:13.5px"><strong>'+q.id.toUpperCase()+'</strong> '+esc(q.q)+'</div>'+rateRow("conf",q.id,"Confidence")+'</div>' });
+ h+='</div><h2>Requirements</h2><div class="card pad">';
+ REQS.forEach(r=>{ h+='<div style="border-bottom:1px solid var(--bd);padding:8px 0"><div class="txt" style="font-size:13.5px"><strong>'+r.id.toUpperCase()+'</strong> '+esc(r.req)+' '+statusChip(r.status)+'</div>'+rateRow("conf",r.id,"Confidence")+'</div>' });
+ h+='</div><button class="btn acc" onclick="S.diagDone=true;save();go(\'path\')">Done: back to path</button>';
+ return h;
+}
+/* ---------- Mock interview ---------- */
+const CRIT=["Accuracy","Evidence fidelity","Concision","Natural delivery","Boundary discipline"];
+function pickMock(n){
+ function shuffle(a){ for(let i=a.length-1;i>0;i--){ const j=Math.floor(Math.random()*(i+1)); const t=a[i];a[i]=a[j];a[j]=t } return a }
+ const bandsA={}; BANKA.forEach(q=>{(bandsA[q.band]=bandsA[q.band]||[]).push(q)});
+ const bandsB={}; BANKB.forEach(q=>{(bandsB[q.band]=bandsB[q.band]||[]).push(q)});
+ let picks=[];
+ Object.keys(bandsA).forEach(b=>picks.push(shuffle(bandsA[b].slice())[0]));
+ Object.keys(bandsB).forEach(b=>picks.push(shuffle(bandsB[b].slice())[0]));
+ picks=picks.slice(0,n);
+ const weak=lastWeakItems(); weak.slice(0,2).forEach(id=>{ if(!picks.some(p=>p.id===id)&&byId[id]&&byId[id].q)picks.unshift(byId[id]) });
+ return picks.slice(0,n);
+}
+function startMock(n){ mock={items:pickMock(n).map(q=>({id:q.id,scores:{},followup:null})),i:0,phase:"ask",t:null,left:0}; render() }
+function mockTimer(sec){ const it=mock; it.left=sec; clearInterval(it.t);
+ it.t=setInterval(()=>{ it.left--; const el=document.getElementById("mtimer"); if(el){ el.textContent=Math.floor(it.left/60)+":"+String(Math.max(0,it.left%60)).padStart(2,"0"); el.classList.toggle("low",it.left<=10) } if(it.left<=0){ clearInterval(it.t); const el2=document.getElementById("mtimer"); if(el2)el2.textContent="time" } },1000); render() }
+function mockReveal(){ const q=byId[mock.items[mock.i].id]; mock.items[mock.i].followup=q.followups[Math.floor(Math.random()*q.followups.length)]; mock.phase="follow"; clearInterval(mock.t); render() }
+function mockScorePhase(){ mock.phase="score"; render() }
+function setMockScore(ci,v){ mock.items[mock.i].scores[ci]=v; render() }
+function mockNext(){ clearInterval(mock.t); if(mock.i<mock.items.length-1){ mock.i++; mock.phase="ask"; render() } else { mock.phase="done"; S.mockHist.push({when:new Date().toISOString(),items:mock.items}); save(); render() } }
+function rMock(){
+ if(!mock||mock.phase==="setup"){
+  const last=S.mockHist.length?'<div class="card pad"><div class="lbl">Last session</div>'+mockSummaryTable(S.mockHist[S.mockHist.length-1])+'</div>':"";
+  return '<p class="note">Realistic simulation from both banks, randomized within band. A visible timer enforces concise speaking. You score yourself against explicit criteria; scores describe answer quality only, and no overall recommendation is ever produced from them.</p>'
+  +'<div class="card pad"><div class="lbl">Start a session</div><div class="row" style="margin-top:8px"><button class="btn acc" onclick="startMock(6)">6 questions</button><button class="btn acc" onclick="startMock(8)">8 questions</button><button class="btn acc" onclick="startMock(10)">10 questions</button></div><div class="cap">Weak items from your last session are folded back in automatically.</div></div>'+last;
+ }
+ if(mock.phase==="done"){ const h=S.mockHist[S.mockHist.length-1];
+  return '<h2>Session complete</h2><p class="note">Answer-quality scores only. Items with any criterion at 2 or below are routed to Targeted Remediation on the Path.</p><div class="card pad">'+mockSummaryTable(h)+'</div><button class="btn acc" onclick="mock=null;render()">Close session</button>';
+ }
+ const it=mock.items[mock.i], q=byId[it.id];
+ let h='<div class="card pad"><div class="row"><span class="chip sm">Question '+(mock.i+1)+' of '+mock.items.length+'</span><span class="num">'+q.id.toUpperCase()+'</span>'+tiersOf(q).map(tierChip).join("")+'</div><h2>'+esc(q.q)+'</h2>';
+ if(mock.phase==="ask"){
+  h+='<div class="timer" id="mtimer" aria-live="off">'+(mock.left?Math.floor(mock.left/60)+":"+String(mock.left%60).padStart(2,"0"):"--:--")+'</div>';
+  h+='<div class="row"><button class="btn" onclick="mockTimer(30)">30s</button><button class="btn" onclick="mockTimer(60)">60s</button><button class="btn" onclick="mockTimer(120)">120s</button></div>';
+  h+=recorderUI();
+  h+='<div class="row" style="margin-top:12px"><button class="btn acc" onclick="mockReveal()">I answered: challenge me</button></div>';
+ } else if(mock.phase==="follow"){
+  h+='<div class="warnbox"><strong>Follow-up:</strong> '+esc(it.followup)+'</div>';
+  h+='<div class="row" style="margin-top:12px"><button class="btn acc" onclick="mockScorePhase()">Score myself</button></div>';
+ } else if(mock.phase==="score"){
+  h+='<div class="sec"><div class="lbl">Self-score (1 weak to 5 strong)</div>';
+  CRIT.forEach((c,ci)=>{ h+='<div class="row" style="margin:6px 0"><span class="pill" style="min-width:150px">'+c+'</span><div class="rate">'; for(let v=1;v<=5;v++){ h+='<button class="chip" aria-pressed="'+(it.scores[ci]===v)+'" onclick="setMockScore('+ci+','+v+')">'+v+'</button>' } h+='</div></div>' });
+  h+='</div><div class="cap">Confidence check: you rated this item '+(S.conf[it.id]||0)+'/5 before practicing. Confidence that materially exceeds performance triggers targeted review.</div>';
+  h+='<div class="row" style="margin-top:12px"><button class="btn acc" onclick="mockNext()">'+(mock.i<mock.items.length-1?"Next question":"Finish session")+'</button><button class="btn ghost" onclick="go(\'questions\',\''+q.id+'\')">Open module</button></div>';
+ }
+ return h+'</div>';
+}
+function mockSummaryTable(h){
+ let t='<div class="twrap"><table><tr><th>Item</th>'+CRIT.map(c=>'<th>'+c+'</th>').join("")+'<th>Weak?</th></tr>';
+ h.items.forEach(it=>{ const weak=Object.values(it.scores||{}).some(v=>v>0&&v<=2);
+  t+='<tr><td>'+it.id.toUpperCase()+'</td>'+CRIT.map((c,ci)=>'<td>'+(it.scores[ci]||"-")+'</td>').join("")+'<td>'+(weak?"review":"")+'</td></tr>' });
+ return t+'</table></div><div class="cap">Per-answer quality only. Nothing on this table aggregates into any overall figure.</div>';
+}
+/* Voice recording: feature-detected, degrades by absence */
+let mediaRec=null,chunks=[],recURL=null;
+function recorderUI(){ if(!(window.MediaRecorder&&navigator.mediaDevices&&navigator.mediaDevices.getUserMedia))return "";
+ return '<div class="sec"><div class="lbl">Voice practice (optional, stays on this device, not saved after you leave)</div><div class="row">'
+ +'<button class="btn" data-noauto="1" id="recbtn" onclick="recToggle()">Start recording</button>'
+ +(recURL?'<audio controls src="'+recURL+'"></audio>':"")+'</div><div class="cap" id="recmsg"></div></div>' }
+function recToggle(){ const btn=document.getElementById("recbtn"),msg=document.getElementById("recmsg");
+ if(mediaRec&&mediaRec.state==="recording"){ mediaRec.stop(); return }
+ navigator.mediaDevices.getUserMedia({audio:true}).then(st=>{ chunks=[]; mediaRec=new MediaRecorder(st);
+  mediaRec.ondataavailable=e=>chunks.push(e.data);
+  mediaRec.onstop=()=>{ st.getTracks().forEach(t=>t.stop()); if(recURL)URL.revokeObjectURL(recURL); recURL=URL.createObjectURL(new Blob(chunks)); render() };
+  mediaRec.start(); btn.textContent="Stop recording";
+ }).catch(()=>{ if(msg)msg.textContent="Microphone unavailable in this browser session; practice aloud without recording." }) }
+/* ---------- Review ---------- */
+function calibrationAlerts(){
+ const out=[]; const last=S.mockHist[S.mockHist.length-1]; if(!last)return out;
+ last.items.forEach(it=>{ const vs=Object.values(it.scores||{}).filter(v=>v>0); if(!vs.length)return;
+  const avg=vs.reduce((a,c)=>a+c,0)/vs.length, c=S.conf[it.id]||0;
+  if(c-avg>=2)out.push({id:it.id,conf:c,avg:avg.toFixed(1)}) });
+ return out;
+}
+function cardChk(key,label){ return '<div class="checkrow"><input type="checkbox" id="ck'+esc(key)+'" '+(S.cardSel[key]?"checked":"")+' onchange="toggleCard(\''+key+'\')"><label for="ck'+esc(key)+'">'+label+'</label></div>' }
+function rReview(){
+ let h='<p class="note">Low-load final review. Nothing new is introduced here; it only surfaces what you already worked. Check items to build your interview-day card.</p>';
+ const cal=calibrationAlerts();
+ if(cal.length)h+='<div class="warnbox"><strong>Calibration review suggested:</strong> confidence materially exceeded self-scored performance on: '+cal.map(c=>c.id.toUpperCase()+" (conf "+c.conf+", scored "+c.avg+")").join("; ")+'. Revisit those modules.</div>';
+ const sel=Object.keys(S.cardSel).filter(k=>S.cardSel[k]);
+ if(sel.length){ h+='<div class="card pad"><div class="lbl">My interview-day card ('+sel.length+')</div>';
+  sel.forEach(k=>{ h+='<div class="txt" style="padding:6px 0;border-bottom:1px solid var(--bd);font-size:14px">'+esc(cardText[k]||k)+'</div>' }); h+='</div>' }
+ function section(title,items,prefix,provK){ let s='<h2>'+esc(title)+' <span class="prov '+provK+'" style="vertical-align:middle">'+(provK==="S"?"SOURCED":"DRAFT")+'</span></h2><div class="card pad">';
+  items.forEach((t,i)=>{ const key=prefix+i; cardText[key]=t; s+=cardChk(key,esc(t)) }); return s+'</div>' }
+ h+=section("Essential role requirements",RAPID.essentials,"ess","S");
+ h+='<h2>Highest-consequence questions</h2><div class="card pad">'+RAPID.highConsequence.map(id=>'<button class="qh" onclick="go(\'questions\',\''+id+'\')"><span class="num">'+id.toUpperCase()+'</span><span class="qt" style="align-self:center">'+esc(byId[id].q||"")+'</span></button>').join("")+'</div>';
+ h+=section("Response-opening cues",RAPID.openers.map(o=>o.q+" : "+o.cue),"opn","D");
+ h+=section("Core experience examples",RAPID.coreExamples,"cex","S");
+ h+=section("Key facts and figures",RAPID.keyFacts,"fct","S");
+ h+=section("Technical concept summaries",RAPID.concepts,"cpt","D");
+ h+=section("Memory anchors",RAPID.anchors,"anc","D");
+ h+=section("Honest uncertainty language",RAPID.uncertainty,"unc","D");
+ h+=section("Composure and pacing",RAPID.composure,"cmp","D");
+ h+=section("Questions to ask the interviewer",RAPID.askThem,"ask","D");
+ h+='<h2>Closing statement <span class="prov D">DRAFT</span></h2><div class="card pad">'+answerBlock({id:"closing"},"c","Spoken closing",RAPID.closing)+cardChk("closing","Add closing statement to my card")+'</div>';
+ cardText["closing"]="Closing: "+RAPID.closing;
+ return h;
+}
+const cardText={};
+/* ---------- Search ---------- */
+let lastQuery="";
+function rSearch(){ return '<p class="note">Searches every content string in the app, including text not currently on screen. Built for the acceptance checks: any date you search must surface only correctly categorized evidence, hours must read only as more than 36, and no held ServiceNow certification may appear.</p><input type="search" id="sq" placeholder="Search all content..." oninput="doSearch(this.value)" aria-label="Search all content"><div id="sres" style="margin-top:12px"></div>' }
+function collectStrings(){
+ const out=[];
+ ALLQ.forEach(q=>{ ["q","testing","jd","structure","a30","a60","a120","maxNote","practice"].forEach(f=>{ if(q[f])out.push({id:q.id,where:q.id.toUpperCase()+" "+f,t:q[f]}) });
+  q.evidence.forEach(e=>out.push({id:q.id,where:q.id.toUpperCase()+" evidence",t:e.t}));
+  q.followups.forEach(t=>out.push({id:q.id,where:q.id.toUpperCase()+" follow-up",t:t}));
+  q.avoid.forEach(t=>out.push({id:q.id,where:q.id.toUpperCase()+" avoid",t:t})) });
+ REQS.forEach(r=>["req","jd","notes","resp","status"].forEach(f=>{ if(r[f])out.push({id:r.id,where:r.id.toUpperCase(),t:r[f]}) }));
+ DEFENSE.forEach(d=>["claim","evidence","context","role","tools","results","boundary","defense","gap"].forEach(f=>{ if(d[f])out.push({id:d.id,where:d.id.toUpperCase()+" "+f,t:d[f]}) }));
+ Object.keys(RAPID).forEach(k=>{ const v=RAPID[k]; if(typeof v==="string")out.push({id:null,where:"Review "+k,t:v}); if(Array.isArray(v))v.forEach(x=>out.push({id:null,where:"Review "+k,t:(typeof x==="string"?x:x.q+" "+x.cue)})) });
+ CHRON.forEach(c=>out.push({id:null,where:"Chronology",t:c.d+" "+c.t+" "+c.note}));
+ PATH.forEach(p=>out.push({id:null,where:"Path",t:p.title+" "+p.desc}));
+ return out;
+}
+function doSearch(qs){ lastQuery=qs; const box=document.getElementById("sres"); if(!box)return;
+ const q=(qs||"").trim().toLowerCase(); if(q.length<2){ box.innerHTML='<p class="note">Type at least 2 characters.</p>'; return }
+ const hits=collectStrings().filter(s=>s.t.toLowerCase().indexOf(q)>=0).slice(0,120);
+ box.innerHTML='<p class="note">'+hits.length+' match'+(hits.length===1?"":"es")+(hits.length===120?" (first 120 shown)":"")+'.</p>'
+ +hits.map(hh=>{ const i=hh.t.toLowerCase().indexOf(q); const a=Math.max(0,i-70), b=Math.min(hh.t.length,i+q.length+90);
+  const snip=esc(hh.t.slice(a,i))+'<mark>'+esc(hh.t.slice(i,i+q.length))+'</mark>'+esc(hh.t.slice(i+q.length,b));
+  return '<div class="card"><button class="qh" '+(hh.id?'onclick="go(\''+(hh.id[0]==="r"?"evidence":"questions")+'\',\''+hh.id+'\')"':'onclick="void(0)" style="cursor:default"')+'><span style="flex:1"><span class="meta" style="margin-bottom:4px"><span class="chip sm">'+esc(hh.where)+'</span></span><span class="txt" style="font-size:13px">'+(a>0?"...":"")+snip+(b<hh.t.length?"...":"")+'</span></span></button></div>' }).join("");
+}
+/* ---------- boot ---------- */
+if("serviceWorker" in navigator){ window.addEventListener("load",()=>{ navigator.serviceWorker.register("./service-worker.js").catch(()=>{}) }) }
+render();
+
+</script></body></html>

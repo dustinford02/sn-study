@@ -1,0 +1,28 @@
+{
+ "name": "Interview Readiness: DSA ServiceNow",
+ "short_name": "IR Prep",
+ "start_url": "./index.html",
+ "scope": "./",
+ "display": "standalone",
+ "background_color": "#0b1020",
+ "theme_color": "#0b1020",
+ "description": "Interview preparation from documented evidence. Answer-quality scores only; no candidate judgment.",
+ "icons": [
+  {
+   "src": "./icon-192.png",
+   "sizes": "192x192",
+   "type": "image/png"
+  },
+  {
+   "src": "./icon-512.png",
+   "sizes": "512x512",
+   "type": "image/png"
+  },
+  {
+   "src": "./icon-maskable-512.png",
+   "sizes": "512x512",
+   "type": "image/png",
+   "purpose": "maskable"
+  }
+ ]
+}
