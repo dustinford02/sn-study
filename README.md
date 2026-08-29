@@ -29,7 +29,7 @@ it verbatim.
 
 ## What it contains
 
-Ten sections, reachable from the top navigation:
+Eleven sections, reachable from the top navigation:
 
 | Section | Purpose |
 |---|---|
@@ -42,12 +42,13 @@ Ten sections, reachable from the top navigation:
 | Learn | Study material |
 | Background | Role and platform context |
 | Reference | Lookup material |
+| Screening | Deconstruction of each screening question |
 | Review | Consolidated pass |
 
 ## How it is built
 
 No build step and no dependencies. The whole application is one
-`index.html` file of roughly 455 KB, served as a static file alongside a
+`index.html` file of roughly 470 KB, served as a static file alongside a
 progressive web app shell:
 
 ```
@@ -101,11 +102,16 @@ The service worker requires a secure context, and localhost qualifies.
 covers adjacent ground in a smaller, earlier form: question
 deconstructions, vocabulary pairs, and a card drill.
 
-The two were assumed to overlap. They do not. A phrase-level comparison
-found no shared text between them, and the earlier repository holds a
-structure this one lacks: for each screening question, the trap wording,
-the nuance, what the question actually tests, and a literal definition.
-The two have not been merged.
+The two were assumed to overlap. Before August 2026 they did not: a
+phrase-level comparison found no shared text between them. That has since
+changed by deliberate act. The fourteen question deconstructions from that
+repository, giving for each screening question the literal reading, what
+it tests, the trap wording, the nuance, and what a strong answer contains,
+were ported verbatim into the Screening section here. That material now
+exists in both places and will drift apart if either copy is edited alone.
+
+Its five vocabulary pairs and fifty-card drill were not ported. The
+repositories have not been merged.
 
 ## Honest limitations
 
