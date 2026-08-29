@@ -99,19 +99,19 @@ The service worker requires a secure context, and localhost qualifies.
 ## Related
 
 [`spm-screening-guide`](https://github.com/dustinford02/spm-screening-guide)
-covers adjacent ground in a smaller, earlier form: question
-deconstructions, vocabulary pairs, and a card drill.
+covered adjacent ground in a smaller, earlier form: question
+deconstructions, vocabulary pairs, and a card drill. It was archived and
+made read-only in August 2026, and this repository is its successor.
 
-The two were assumed to overlap. Before August 2026 they did not: a
-phrase-level comparison found no shared text between them. That has since
-changed by deliberate act. The fourteen question deconstructions from that
-repository, giving for each screening question the literal reading, what
-it tests, the trap wording, the nuance, and what a strong answer contains,
-were ported verbatim into the Screening section here. That material now
-exists in both places and will drift apart if either copy is edited alone.
+Its fourteen question deconstructions, giving for each screening question
+the literal reading, what it tests, the trap wording, the nuance, and what
+a strong answer contains, were ported verbatim into the Screening section
+here before the archive. This is now the only editable copy, so the two
+cannot drift apart.
 
-Its five vocabulary pairs and fifty-card drill were not ported. The
-repositories have not been merged.
+Its five vocabulary pairs and fifty-card drill were not ported. They exist
+only in the archive, which stays public, readable and forkable. Nothing was
+deleted.
 
 ## Honest limitations
 
