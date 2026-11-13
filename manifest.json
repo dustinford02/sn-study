@@ -1,22 +1,24 @@
 {
- "name": "Study Console",
- "short_name": "Study",
+ "name": "Interview Prep: ServiceNow SPM Application Developer",
+ "short_name": "SPM Prep",
  "start_url": "./index.html",
  "scope": "./",
  "display": "standalone",
- "background_color": "#0b1020",
- "theme_color": "#0b1020",
- "description": "Offline single-file reference tool with an encrypted content layer.",
+ "background_color": "#F4FAFD",
+ "theme_color": "#F4FAFD",
+ "description": "Interview preparation console: ServiceNow SPM Application Developer. Prepares interview answers from documented evidence. Makes no candidate judgment.",
  "icons": [
   {
    "src": "./icon-192.png",
    "sizes": "192x192",
-   "type": "image/png"
+   "type": "image/png",
+   "purpose": "any"
   },
   {
    "src": "./icon-512.png",
    "sizes": "512x512",
-   "type": "image/png"
+   "type": "image/png",
+   "purpose": "any"
   },
   {
    "src": "./icon-maskable-512.png",

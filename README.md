@@ -15,17 +15,17 @@ information and the work is mine, not because it is intended as a reusable
 tool for anyone else.
 
 The content was originally written against one specific job posting. That
-posting is closed, and the employer-specific material has since been
-removed: the company program section, the customer context, the posting
-narrative, the requisition number, and the interview date. What remains is
-the part that was never company-specific, namely the question bank, the
-evidence, the quiz, the study library, and the candidate's own background.
+posting is closed. Material that should not sit on the open web has been
+removed or generalized: company and customer names, program and contract
+identifiers, contract value and internal cost positions, clearance level
+and adjudication details, the requisition, and the interview date. What
+remains is the question bank, the evidence tiers, the quiz, the study
+library, and a portfolio-level account of the work.
 
-Where a passage is marked verbatim, it is reproduced from a supplied
-source and the comment naming that source has been left in place, even
-where the filename mentions the original employer. Rewriting a provenance
-note to hide where content came from would defeat the purpose of marking
-it verbatim.
+The ServiceNow University transcript, the screening deconstructions, and
+the reference glossaries are reproduced from supplied sources. The resume
+summary and the project-manager narrative are a public generalization of
+supplied material, not a verbatim copy.
 
 ## What it contains
 
@@ -66,6 +66,12 @@ progressive web app shell:
     └── workflows/
         └── doc-drift.yml
 ```
+
+The manifest uses the same name and the same `#F4FAFD` background as the
+page. `service-worker.js` caches that shell network-first: a visit with a
+network connection loads the current files, and a later offline visit can
+still open them. The worker does not change how the study console behaves
+while online.
 
 `robots.txt` disallows every crawler. That is deliberate: the app is meant
 to be reachable by me from any device, not to be indexed by search
